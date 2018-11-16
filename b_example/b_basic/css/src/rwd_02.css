@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* rwd_02.css */
+
+#wrap{margin:auto; width: 100%; max-width: 960px; max-width: 60rem; height: auto; min-height: 400px; min-height: 25rem; transition:all 300ms linear;}
+
+#headBox{width: 100%; height: 150px; height: 9.375rem; background-color: #fa0;}
+h1 {width: 100px; width: 6.25rem; height: 150px; height: 9.375rem; background-color: #9f7; transition:all 300ms ease-in;
+    float:left;}
+#gnb{width: 45px; width: 2.8125rem; height: 45px; height: 2.8125rem;
+  background-color: #fff; float: right;}
+#infoBox{width: 100%; background-color: #f9f;}
+#contentBox{width: 100%; height: 400px; height: 25rem; background-color: #acc;}
+#contentBox>ul{width: 100%; height: 100%;}
+#contentBox>ul>li{width: 25%; height: 100%; float: left;
+  background-color: #ac7; border:1px solid #333; box-sizing: border-box;}
+/* .green{background-color: #5a4;}
+  .blue{background-color: #77f;} */
+  #contentBox>ul>li:nth-child(2n){background-color: #0ff;}
+  #contentBox>ul>li:nth-child(2n+1){background-color: #ff0;}
+
+  /* :nth-child() 무조건 연속되어진 형태를 설정 가능하다
+
+  <p class="par"></p>
+  <p class="par"></p>
+  <p class="par"></p>
+  .par:nth-child(1){}
+  .par:first-child{} - first, last만 가능
+  .par:last-child{} - first, last만 가능
+
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  li:nth-child(4){}
+
+  <div></div>
+  <p></p>
+  <p></p>
+  <div></div>
+  <p></p>
+  
+  *nth-of-type의 경우는 동일 레벨에서 가능하다
+  p:nth-child(3){} -적용불가, 연속되지 않아서
+  p:nth-of-type(3){} - 적용가능, 하지만 동일레벨에서만 가능
+  */
+
+#newsBox{width: 100%; height: 300px; height: 18.73rem; background-color: #f70;}
+.best_news {width: 100%; height: 100px; height: 6.25rem; background-color: #cc0;}
+.issue_news {width: 100%; height: 200px; height: 12.5rem; background-color: #f50;}
+
+#footBox{width: 100%; height: 100px; height: 6.25rem; background-color: #730;}
+#footBox > h2{width: 100px; width: 6.25rem; height: 100px; height: 6.25rem; background-color: #acf; float: left;}
+
+
+
+
+/* mobile start-------------------------------------*/
+@media screen and (max-width: 480px) {
+  #wrap{background-color: #ccc;}
+  #headBox{height: 100px; position: relative;}
+  h1 {height: 100%;}
+  #gnb{position: absolute; right: 20px; right: 1.25rem; top: 50%; margin-top: -1.40625rem;}
+  /* rem으로 표기 midia 빼고 익스플로어를 위해서 px도 같이 써줘야함*/
+  #infoBox{height: 400px; height: 25rem;}
+  #contentBox>ul>li{width: 50%; height: 50%;}
+  #contentBox>ul>li:nth-child(3){background-color: #afa;}
+  #contentBox>ul>li:nth-child(4){background-color: #aaf;}
+
+  #footBox > h2{width: 50%; margin: auto; float: none;}
+
+
+} /* mobile end */
+
+
+/* tablet start-------------------------------------*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #wrap{background-color: #fac;}
+  #infoBox{height: 300px; height: 18.75rem;}
+
+} /* tablet end */
+
+
+/* pc start-------------------------------------*/
+@media screen and (min-width: 769px) {
+  #wrap{background-color: #cbc;}
+  #infoBox{height: 450px; height: 28.125rem;}
+  #contentBox{height: 600px; height: 37.5rem;}
+  #newsBox {display: none;}
+} /* px end */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="URF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>layout</title>
+
+	<style type="text/css">
+   /* reset.css */
+		html, body{margin: 0; width:100%; height: 100%;}
+		h1,h2,h3,h4,h5,h6,p,ul,li,dt,dd,dl {margin: 0; padding: 0;}
+		ul,ol,li {list-style:none;}
+    a{color:#333; text-decoration: none;}
+    a:hover, a:focus{color:#fa0; text-decoration:underline;
+      outline: 3px solid #fa0;}
+      header,nav,aside,section,article,footer,main,figure{display:block;}
+
+      /* design.css */
+		#section {width: 960px; height: 850px; background-color: #f06; margin: auto 0;} /* 중간에 위치 */
+
+		#headBox {width: 960px; height: 100px; background-color: #af0;}
+			h1 {width: 100px; height: 100px; background-color: #fea;}
+		#nav {width: 960px; height: 50px; background-color: #eae;}
+			#nav>div {width:25%; height: 50px; float:left;}
+			.navBox1 {background-color: #a00;}
+			.navBox2 {background-color: #0e0;}
+			.navBox3 {background-color: #eee;}
+			.navBox4 {background-color: #aaa;}
+		#white {width: 960px; height: 580px; background-color: #0e0;}
+			#aside {width: 40%; height: 580px; background-color: #aea; float:left;}
+				h3 {width: 100px; height: 100px; background-color: #fea;}
+				#aside > ul > li {width: 100%; height: 40px; background-color: #ae0;}
+				h4 {}
+
+			#section2 {width: 60%; height: 580px; background-color: #ea0; float:left;}
+			#section2>div {width: 100%; height: 0 auto;}
+			.article1 {background-color: #a00;}
+			h1 {width:60%; height: 0 auto; background-color: #faa;}
+			.article2 {height: 20%; background-color: #0a0;}
+			.article3 {height: 20%; background-color: #00a;}
+			.article4 {height: 20%; background-color: #000;}
+		#footer {width: 960px; height: 120px; background-color: #0ae;}
+			h2 {width: 100px; height: 100%; background-color: #fea; float:left;}
+			#address {width: 860px; height: 120px; background-color: #ae0; float:left;}
+
+
+	</style>
+
+
+
+</head>
+<!-- layout -->
+<body>
+	<header id="headBox">
+	<!-- // #headBox -->
+		<div id="headerBox">
+			<h1>h1</h1>
+		</div>
+		<nav id="navBox">
+			<nav class="navBox1">1</div>
+			<nav class="navBox2">2</div>
+			<nav class="navBox3">3</div>
+			<nav class="navBox4">4</div>
+		</div>
+		<div id="white">
+		<!-- // #whiteBox -->
+			<div id="aside">
+				<h3>h3</h3>
+				<ul>
+					<li><a href="#">aside1</a><li>
+						<ol>
+						<li>1</li>
+						</ol>
+					<li><a href="#">aside2</a><li>
+						<ol>
+						<li>2</li>
+						</ol>
+					<li><a href="#">aside3</a><li>
+						<ol>
+						<li>3</li>
+						</ol>
+					<li><a href="#">aside4</a><li>
+						<ol>
+						<li>4</li>
+						</ol>
+				</ul>
+			</div>
+			 <div id="section2">
+				<div class="article1">1</div>
+				<h1>h111</h1>
+				<div class="article2">2</div>
+					<div id="article_2_01"></div>
+				<div class="article3">3</div>
+				<div class="article4">4</div>
+			 </div>
+		</div>
+
+		<footer id="footBox">
+			<h2>h2</h2>
+			<div id="address"></div>
+
+		</div>
+
+
+	</header>
+</body>
+</html>
