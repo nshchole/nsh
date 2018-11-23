@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* rwd_03_homework.css */
+
+#wrap {width: 60rem; height: 250rem; background-color: #fa0;}
+
+/* commonArea ==================== */
+
+/* mobile 480================================================== */
+@media screen and (max-width: 480px) {
+
+}
+
+/* tablet 768================================================== */
+@media screen and (min-width: 480px) and (max-width: 768px){
+
+}
+
+/* laptop 1366================================================== */
+@media screen and (min-width: 769px) and (max-width: 1366px){
+
+}
+
+/* ================================================== */
