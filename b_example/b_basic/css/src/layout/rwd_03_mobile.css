@@ -4,7 +4,10 @@
 @media screen and (max-width: 480px) {
   /* device 기준크기 : 480px */
   #wrap {background-color: #afa;}
-  #headBox {height: 12.5vw; /* 60/480*100 */ min-height: 2.5rem;}
+  #headBox { height: 12.5vw; /* 60/480*100 */ min-height: 2.5rem;}
+  h1{width: 26.25vw; /* 126/480*100 */ min-width: 6.25rem;}
+  #navBox {width: 18.75vw; /* 90/480*100 */ min-width:3.75rem; max-width: 5.625rem; height: 7.901667vw; /* 38/480*100 */ min-height: 1.5625rem; max-height: 2.375rem;}
+
   #addBanner {margin-top: 12.5vw; height: 150vw; /* 720/480*100 */ min-height: 30rem;}
   #infoBox {height: 150vw; /* 720/480*100 */ min-height: 30rem;}
   #contentBox {height: 150vw; min-height: 30rem;}
