@@ -1,30 +1,8 @@
 @charset "UTF-8";
-
 /* rwd_03_homework.css */
 
-#wrap {width: 60rem; height: 250rem; background-color: #fa0;}
-h1 {float: left; height: 100px; background-color: #0ff;}
-.btn {float: left; height: 100px; background-color: #777;}
-
-/* commonArea ==================== */
-
-/* mobile 480================================================== */
-@media screen and (max-width: 480px) {
-  #wrap {width: 100%; background-color: #afa;}
-  h1 {width: 30%; max-width: 200px; min-width: 100px;}
-  .btn {width: 30%; max-width: 200px; min-width: 100px;}
-}
-
-/* tablet 768================================================== */
-@media screen and (min-width: 480px) and (max-width: 768px){
-  #wrap { background-color: #acf;}
-
-}
-
-/* laptop 1366================================================== */
-@media screen and (min-width: 769px) and (max-width: 1366px){
-  #wrap {width: 100%; background-color: #f50;}
-
-}
-
-/* ================================================== */
+@import url("./layout/rwd_03_common.css");
+@import url("./layout/rwd_03_mobile.css");
+@import url("./layout/rwd_03_tablet.css");
+@import url("./layout/rwd_03_labtop.css");
+@import url("./layout/rwd_03_pcfull.css");
