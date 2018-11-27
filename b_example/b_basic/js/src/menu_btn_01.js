@@ -91,4 +91,25 @@ hide.on('click', function(evt){
 	btnDd.fadeOut(500);
 });
 
+//----------------------------------------------------
+
+// daul버튼 시작
+var dual = $('.dual');
+dual.on('click',function(e) {
+	e.preventDefault();
+	
+	/*
+	var status = btnDd.css('display');
+	console.log(status);
+
+	if(status !== 'none'){
+		btnDd.slideUp(500);
+	}else{
+		btnDd.slideDown(500);
+	}
+	*/
+
+btnDd.slideToggle(500);
+}); // daul버튼 끝
+
 })(jQuery);
