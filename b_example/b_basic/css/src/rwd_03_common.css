@@ -13,7 +13,7 @@ h1 {float: left; width: 6.25rem; height: 1.875rem; background-color: #afa;}
 .sign_up {width: 24px; height: 100%; float: left;}
 .sign_up>a {display: block; width: 100%; height: 100%; background-color: #531;}
 
-.menu {width: 30px; height: 100%; float: right;}
+.menu {width: 30px; height: 100%; float : right;}
 .menu>button {width: 100%; height: 100%;}
 .gnb {display: none;}
 
