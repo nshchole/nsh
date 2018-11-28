@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- slide_banner_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/slide_banner_01.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>slide_banner_01</title>
+</head>
+
+<body>
+
+	<!-- layout -->
+	<div id="wrap">
+		<h1>slide Banner</h1>
+				<section id="viewBox">
+					<h2 class="hidden">광고 뷰영역</h2>
+				<!-- 3개의 광고영역 제작순서 :
+						- 1: 인디케이터
+						- 2: 좌우버튼(entity code)
+						- 3: 광고영역
+				-->
+				<div class="view_indicator">
+					<ul class="hidden_wrap">
+						<li><a href="#view_01"><span>view_01의 내용 설명</span></a></li>
+						<li><a href="#view_02"><span>view_01의 내용 설명</span></a></li>
+						<li><a href="#view_03"><span>view_01의 내용 설명</span></a></li>
+					</ul>
+				</div>
+
+				<div class="view_btn hidden_wrap">
+					<button type="button" class="next_btn">
+						&rsaquo;
+						<span>다음광고보기</span>
+					</button>
+					<button type="button" class="prev_btn">
+						&lsaquo;
+						<span>이전광고보기</span>
+					</button>
+
+					</button>
+				</div>
+
+				<div class="view_banner">
+					<h3 class="hidden">광고내용</h3>
+					<div class="view_banner_outer">
+						<div class="view_banner_01" id="view_01">
+							<!-- 방법 1 외부의 파일을 불러와서 삽입 : iframe -->
+							<iframe src="https://www.youtube.com/embed/TpPwI_Lo0YY"></iframe>
+						</div>
+
+
+						<div class="view_banner_03" id="view_03">
+							<video poster="../img/animal.jpg" controls="controls" autoplay="autoplay" muted="muted">
+								<source src="../media/web_video_test.webm" type="video/webm" />
+								<source src="../media/web_video_test.ogg" type="video/ogg" />
+								<source src="../media/web_video_test.mp4" type="video/mp4" />
+								<p>사용하고 있는 브라우저에서는 동영상이 재생되지 않는다. <br />
+									최신 브라우저를 설치하고 사용해주세요. <br />
+									<a href="http://goolge.com/chorme">권장 브라우저 설치하기</a>
+								</p>
+							</video>
+						</div>
+					</div>
+				</div>
+
+		</section>
+
+
+	</div>
+
+	<!-- script(jQuery) -->
+	<script src="../js/base/jquery-3.3.1.min.js"></script>
+	<script src="../js/base/jquery-ui.min.js"></script>
+	<script src="../js/src/slide_banner_01.js"></script>
+</body>
+</html>

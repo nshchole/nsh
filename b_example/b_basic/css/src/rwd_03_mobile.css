@@ -12,7 +12,13 @@
 
   #addBanner {margin-top: 12.5vw; height: 150vw; /* 720/480*100 */ min-height: 30rem;}
   #infoBox {height: 150vw; /* 720/480*100 */ min-height: 30rem;}
-  #contentBox {height: 150vw; min-height: 30rem;}
+  #contentBox {height: 150vw; min-height: auto;}
+  .con_in{float: left; width: 100%; height: auto; min-height: 10rem;}
+  .cont_01{background-color: #caf;}
+  .cont_02{background-color: #ba4;}
+  .cont_03{background-color: #64e;}
+
+
   #footBox {height: 12.5vw; /* 60/480*100 */ min-height: 2.5rem;}
   
 }/* //end mobile 480 */
