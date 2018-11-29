@@ -1,0 +1,17 @@
+/* rwd_seven_main_mobile.css */
+
+/* mobile 480================================================== */
+@media screen and (max-width: 480px) {
+  /* device 기준크기 : 480px */
+#wrap {background-color: #ccc;}
+#headBox {height: 20.833333vw; min-height: 2.5vh; background-color: #ccc;}
+.container {width: 444px; height: 62px; background-color: #441;}
+h1 {width: 100px; height: 62px; background-color: #777;}
+#navBox {width: 130px; height: 62px;}
+#spot {margin-right: 30px; width:50px; height:62px;}
+#menu {width:50px; height:62px;}
+
+
+
+
+}/* //end mobile 480 */
