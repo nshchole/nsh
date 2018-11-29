@@ -48,7 +48,6 @@ position: absolute; z-index: -1; top: 0; left: 0;}
 .banner_03 {background-color: #aa4; background-image: url("../../../img/slide_banner/animal_03.jpg");}
 .banner_04 {background-color: #464; background-image: url("../../../img/slide_banner/animal_04.jpg");}
 .banner_05 {background-color: #f462; background-image: url("../../../img/slide_banner/animal_05.jpg");}
-
 .view_banner_outer h4{padding: 1rem; width: 80%; color: #fff; background-color: rgba(50,50,50,0.7); font-size: 2.3rem;}
 
 .view_banner_outer p{margin-top: 1.5rem; color: #fff; width: 80%; font-size: 1.2rem; font-weight: bold; text-indent: 1rem;
