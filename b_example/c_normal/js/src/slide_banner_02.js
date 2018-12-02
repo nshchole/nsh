@@ -54,7 +54,7 @@
       e.preventDefault();
       slideI += 1;
       if(slideI > liLeng){ slideI = liLeng; }
-      var _index = slideI * 100;
+      
       viewOuter.animate({marginLeft:-_index + '%'});
       viewIndi.removeClass('action');
       viewIndi.eq(slideI).addClass('action');

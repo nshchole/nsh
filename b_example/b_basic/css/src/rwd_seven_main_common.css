@@ -2,11 +2,120 @@
 
 /* commonArea ==================== */
 
-#wrap {width: 100%; height: auto; background-color: #ccc;}
-#headBox{position: fixed; padding: 18px; box-sizing: border-box; top: 0; left: 0; z-index: 500;
+#wrap {width: 100%; height: auto; min-height: 10rem; background-color: #ccc;}
+#headBox{position: fixed; padding: 18px; box-sizing: border-box; top: 0; left: 0; z-index: 10;
    		width: 100%; height: 3.75rem; background-color: #123;}
-.container {margin: auto; width: 100%; background-color: #587;}
-h1 {float: left; text-align: center; background-color: #585;}
+.container {margin: auto; width: 100%;}
+h1 {float: left; text-align: center; background-color: #2A9346;}
 #navBox {float:right; width: 130px; height: 62px; background-color: transparent;}
-#spot {float: left; margin-right: 30px; background-color: #d45ca5;}
+#spot {float: left; background-color: #d45ca5;}
 #menu {float: left; background-color: #ca3235;}
+
+
+/* #addBanner ----------------------- */
+#addBanner{width: 100%; background-color: #bbb;}
+
+/* #infoBox ----------------------- */
+
+
+/* 1 + 1 */
+#infoBox{width: 100%; background-color: #F4DCCB;}
+#infoBox_head {background-color: #fff;}
+h2 {margin: auto; text-align: center; background-color: #2A9346;}
+
+.one_plus_01 {background-color: #222;}
+.one_plus_photo_01 {width: 100%; background-color: #056;}
+.one_plus_text_01 {width: 100%; background-color: #243;}
+
+.one_plus_02 {background-color: #222;}
+.one_plus_photo_02 {width: 100%; background-color: #056;}
+.one_plus_text_02 {width: 100%; background-color: #243;}
+
+
+/* 2 + 1 */
+#infoBox_02 {background-color: #F4DCCB;}
+#infoBox_head_02 {background-color: #fff;}
+.infoBox_title_02 {background-color: #2A9346;}
+
+.one_plus_01_02 {background-color: #222;}
+.one_plus_photo_01_02 {background-color: #056;}
+.one_plus_text_01_02 {background-color: #243;}
+
+.one_plus_04 {background-color: #222;}
+.one_plus_photo_02_02 {width: 100%; background-color: #056;}
+.one_plus_text_02_02 {width: 100%; background-color: #243;}
+
+
+/* 증정 */
+#infoBox_03 {background-color: #F4DCCB;}
+#infoBox_head_03 {background-color: #fff;}
+.infoBox_title_03 {margin: auto; text-align: center; background-color: #2A9346;}
+
+.one_plus_05 {height: 246px;}
+.one_plus_01_03 {background-color: #222;}
+.one_plus_photo_01_03 {width: 100%; background-color: #056;}
+.one_plus_text_01_03 {width: 100%; background-color: #243;}
+
+.one_plus_06 {background-color: #222;}
+.one_plus_photo_02_03 {width: 100%; background-color: #056;}
+.one_plus_text_02_03 {width: 100%; background-color: #243;}
+
+
+/* PB */
+#infoBox_04 {background-color: #F4DCCB;}
+#infoBox_head_04 {background-color: #fff;}
+.infoBox_title_04 {margin: auto; text-align: center; background-color: #2A9346;}
+
+.one_plus_07 {}
+.one_plus_01_04 {background-color: #222;}
+.one_plus_photo_01_04 {width: 100%; background-color: #056;}
+.one_plus_text_01_04 {width: 100%; background-color: #243;}
+
+.one_plus_08 {}
+.one_plus_photo_02_04 {width: 100%; background-color: #056;}
+.one_plus_text_02_04 {width: 100%; background-color: #243;}
+
+
+#serviceBox {width: 100%; background-color: #F4DCCB;}
+#serviceBox_head {width: 100%; background-color: #fff;}
+.serviceBox_title {background-color: #2A9346;}
+#service_icon {background-color: #056;}
+#service_text {background-color: #243;}
+
+#service_icon_02 {background-color: #056;}
+#service_text_02 {background-color: #243;}
+
+
+/* contentBox */
+#contentBox {background-color: #ccc;}
+#advice {background-color: #a43;}
+
+#contentBox_02 {background-color: #ccc;}
+#recruit {background-color: #a43;}
+
+#contentBox_03 {background-color: #ccc;}
+#customer {background-color: #a43;}
+
+#callBox {background-color: #43a;}
+#call {background-color: #fff;}
+
+
+#pcVersion {background-color: #ccc;}
+#pc {background-color: #aaa;}
+#up {background-color: #fff;}
+
+
+#snsBox {background-color: #43a;}
+#snsBox_01 {background-color: #fff;}
+#snsBox_02 {background-color: #fff;}
+#snsBox_03 {background-color: #fff;}
+#snsBox_04 {background-color: #fff;}
+
+#footBox {background-color: #532;}
+#addressBox {background-color: #fff;}
+
+
+
+/* #contentBox ----------------------- */
+
+/* #footBox ----------------------- */
