@@ -1,1 +1,24 @@
 /* rwd_seven_main_pcfull.css */
+
+@media screen and (min-width: 1367px) {
+
+/* commonArea ==================== */
+
+
+/* .service_all ----------------------- */
+.service_all {height: 1239px;}
+
+.servicebox_all_01 {clear: both; margin: auto; margin-top: 25px; margin-bottom: 20px;}
+.servicebox_life {float: left;}
+.servicebox_card {float: right;}
+
+.servicebox_all_02 {clear: both; margin: auto; margin-bottom: 20px;}
+.servicebox_parcel {float: left;}
+.servicebox_tax {float: right;}
+
+.servicebox_all_03 {clear: both; margin: auto; }
+.servicebox_giftcard {float: left;}
+.servicebox_smartpick {float: right;} 
+
+/*----------------------------------------------------------------*/
+} /*pcfull end

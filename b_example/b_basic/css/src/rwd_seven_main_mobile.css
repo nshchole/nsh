@@ -1,17 +1,84 @@
-/* rwd_seven_main_mobile.css */
+ /* rwd_seven_main_mobile.css */
+
 
 /* mobile 480================================================== */
 @media screen and (max-width: 480px) {
   /* device 기준크기 : 480px */
-#wrap {background-color: #ccc;}
-#headBox {height: 20.833333vw; min-height: 2.5vh; background-color: #ccc;}
-.container {width: 444px; height: 62px; background-color: #441;}
-h1 {width: 100px; height: 62px; background-color: #777;}
-#navBox {width: 130px; height: 62px;}
-#spot {margin-right: 30px; width:50px; height:62px;}
-#menu {width:50px; height:62px;}
+
+/* commonArea ==================== */
+
+.product_all {position: relative; height: 93.75vw;}
+.product_head {position: relative; height: 16.66666666666667vw;}
+.product_title {position: absolute; top: 0.875rem; left: 10.5rem; width: 30vw; height: 10.41666666666667vw;}
+
+.oneplus_all {clear: both;}
+
+.product_in_001 {float: left; width: 28.33333333333333vw; height: 51.25vw;}
+.product_in_02 {width: 8.5rem; height: 9.4375rem;}
+.product_in_03 {width: 136px; height: 5.9375rem;}
+
+.product_in_002 {float: right; width: 136px; height: 246px;}
+.product_in_04 {width: 136px; height: 151px;}
+.product_in_05 {width: 136px; height: 95px;}
+
+.service_common {width: 360px; height: 212px;}
+.service_common_02 {width: 160px; height: 212px;}
+
+.service_icon {width: 160px; height: 162px;}
+.service_title {height: 50px;}
+
+.content_common {text-align: center; height: 80px;}
+.sns_common {width: 50px; height: 50px;}
 
 
 
 
-}/* //end mobile 480 */
+/* .head_all ----------------------- */
+.head_all {height: auto;}
+.headBox {height: 100px;}
+.headBox_02 {margin-top: 18px; clear: both; width: 444px; height: 62px;}
+.logo {float: left; text-align: center; width: 100px; height: 62px;}
+.map {float: right; width: 50px; height: 62px;}
+.menu {float: right; width: 50px; height: 62px;}
+.addBanner {height: 448px;}
+
+
+/* pb_all ----------------------- */
+.pb {position: absolute; top: 140px; left: 90px; width: 300px; height: 246px;}
+
+/* .service_all ----------------------- */
+
+.service_all {height: 810px;}
+
+.servicebox_all_01 {clear: both; margin: auto; margin-top: 25px; margin-bottom: 20px;}
+.servicebox_life {float: left;}
+.servicebox_card {float: right;}
+
+.servicebox_all_02 {clear: both; margin: auto; margin-bottom: 20px;}
+.servicebox_parcel {float: left;}
+.servicebox_tax {float: right;}
+
+.servicebox_all_03 {clear: both; margin: auto; }
+.servicebox_giftcard {float: left;}
+.servicebox_smartpick {float: right;}
+
+
+/* contentBox ----------------------- */
+
+.call {position: relative; height: 138px;}
+.callBox {position: absolute; top: 40px; left: 80px; margin: auto;
+			text-align: center; width: 320px; height: 60px;}
+.pc_up_Box {clear: both; height: 80px;}
+.pc {float: left; width: 225px; height: 80px; background-color: #efe6ff;}
+.up {float: right; width: 225px; height: 80px; background-color: #f5f0ff;}
+.snsBox {position: relative; height: 80px;}
+.snsBox_in {position: absolute; top: 15px; left: 17%; width: 296px; height: 50px;}
+
+
+/* footerBox ----------------------- */
+.footBox {position: relative; height: 168px;}
+.addressBox {position: absolute; text-align: center; top: 45px; left: 44px;
+		margin: auto; width: 392px; height: 80px;}
+
+
+}/* //end mobile 480 

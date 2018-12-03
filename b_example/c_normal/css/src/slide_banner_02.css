@@ -21,7 +21,7 @@ h1>a{font-size: inherit; color: inherit;}
 .view_indicator>ul>li{float: left; margin-right: 1.5rem; width: 1.5rem; height: 1.5rem;}
 .view_indicator>ul>li:last-child{margin-right: 0;}
 .view_indicator>ul>li>a{border-radius: 50%; background-color: #fff;}
-.view_indicator>ul>li>a:hover,
+.view_indicator>ul>li>a:hover, 
 .view_indicator>ul>li>a:focus{background-color: #333;}
 .view_indicator>ul>li.action>a{background-color: #562;}
 
