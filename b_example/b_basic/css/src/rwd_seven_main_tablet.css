@@ -3,6 +3,7 @@
 /* tablet 768================================================== */
 @media screen and (min-width: 481px) and (max-width: 768px){
   /* device 기준크기 : 768px */
+<<<<<<< HEAD
 
 /* commonArea ==================== */
 
@@ -78,5 +79,79 @@
 .footBox {position: relative; height: 168px;}
 .addressBox {position: absolute; text-align: center; top: 45px; left: 44px;
 		margin: auto; width: 392px; height: 80px;}
+=======
+#headBox {width: 100%; height: 15.1041667vw; min-height: 2.5vw;}
+.container {height: 8.072916vw;}
+h1 {width: 20.833333vw; height: 10.677083vw;}
+#navBox {width: 24.739583vw; height: 9.375vw;}
+#spot {margin-right: 1.25rem; width: 10.416666vw; height: 9.375vw;}
+#menu {width: 10.416666vw; height: 9.375vw;}
+
+#addBanner {height: 93.333333vw; /* 448/480*100 */}
+
+
+/* 1 + 1 */
+#infoBox {width: 100%; height: 70.3125vw;}
+#infoBox_head {width: 100%; height: 13.02083333333333vw;}
+h2 {width: 29.94791666666667vw; height: 8.333333333333333vw;}
+
+
+.one_plus {margin: auto; clear: both; width: 53.125vw; height: 18.22916666666667vw;}
+.one_plus_01 {float: left; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_01 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_01 {width: 24.08854166666667vw; height: 16.796875vw;}
+
+.one_plus_02 {float: right; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_02 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_02 {width: 24.08854166666667vw; height: 16.796875vw;}
+
+
+/* 2 + 1 */
+#infoBox_02 {width: 100%; height: 70.3125vw;}
+#infoBox_head_02 {width: 100%; height: 13.02083333333333vw;}
+.infoBox_title_02 {width: 29.94791666666667vw; height: 8.333333333333333vw;}
+
+
+.one_plus_03 {margin: auto; clear: both; width: 53.125vw; height: 18.22916666666667vw;}
+.one_plus_01_02 {float: left; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_01_02 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_01_02 {width: 24.08854166666667vw; height: 16.796875vw;}
+
+.one_plus_04 {float: right; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_02_02 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_02_02 {width: 24.08854166666667vw; height: 16.796875vw;}
+
+
+/* 증정 */
+#infoBox_03 {width: 100%; height: 70.3125vw;}
+#infoBox_head_03 {width: 100%; height: 13.02083333333333vw;}
+.infoBox_title_03 {width: 29.94791666666667vw; height: 8.333333333333333vw;}
+
+
+.one_plus_05 {margin: auto; clear: both; width: 53.125vw; height: 18.22916666666667vw;}
+.one_plus_01_03 {float: left; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_01_03 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_01_03 {width: 24.08854166666667vw; height: 16.796875vw;}
+
+.one_plus_06 {float: right; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_02_03 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_02_03 {width: 24.08854166666667vw; height: 16.796875vw;}
+
+
+/* PB */
+#infoBox_04 {width: 100%; height: 70.3125vw;}
+#infoBox_head_04 {width: 100%; height: 13.02083333333333vw;}
+.infoBox_title_04 {width: 29.94791666666667vw; height: 8.333333333333333vw;}
+
+
+.one_plus_07 {margin: auto; clear: both; width: 53.125vw; height: 18.22916666666667vw;}
+.one_plus_01_04 {float: left; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_01_04 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_01_04 {width: 24.08854166666667vw; height: 16.796875vw;}
+
+.one_plus_08 {float: right; width: 24.08854166666667vw; height: 43.359375vw;}
+.one_plus_photo_02_04 {width: 24.08854166666667vw; height: 26.5625vw;}
+.one_plus_text_02_04 {width: 24.08854166666667vw; height: 16.796875vw;}
+>>>>>>> 7f97bf376c5d5dc872ced5a792ac5193e8b88126
 
 }/* //end tablet 768 */
