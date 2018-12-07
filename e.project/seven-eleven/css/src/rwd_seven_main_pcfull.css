@@ -1,0 +1,127 @@
+/* rwd_seven_main_pcfull.css */
+
+@media screen and (min-width: 1367px) {
+
+/* commonArea ==================== */
+
+/* .head_all ----------------------- */
+.headBox {height: 116px;}
+.headBox_02 {margin: auto; clear: both; width: 1704px; height: 64px;}
+.logo {float: left; text-align: center; width: 250px; height: 64px;}
+.map .menu {display: none;}
+.menu_01 {margin-left: 650px; margin-right: 20px; float: left; width: 80px; height: 53px; background-color: #777;}
+.menu_02 {margin-right: 20px; float: left; width: 80px; height: 53px; background-color: #222;}
+.menu_03 {margin-right: 62px; float: left; width: 80px; height: 53px; background-color: #777;}
+.menu_04 {margin-right: 20px; float: left; width: 80px; height: 53px; background-color: #222;}
+.menu_05 {margin-right: 57px; float: left; width: 80px; height: 53px; background-color: #777;}
+.menu_06 {float: left; width: 80px; height: 53px; background-color: #fa0;}
+
+.addBanner {width: 100%; height: 1106px;}
+
+
+/* .indicator ----------------------- */
+.view_indicator{left: 792px; margin: auto; width: 361px; height: 37px;}
+.view_indicator>ul>li{float: left; width: 36px; height: 100%; margin-right: 44px;}
+
+
+/* .oneplus_all ----------------------- */
+.oneplus_all {clear: both; width: auto; height: 725px;}
+.oneplus_title {float: left; width: 480px; height: 90px;}
+.twoplus_title {float: left; width: 480px; height: 90px;}
+.gift_all_title {float: left; width: 480px; height: 90px;}
+.pb_all_title {float: left; width: 480px; height: 90px;}
+
+
+/* pb_all ----------------------- */
+.pb {display: none;}
+
+
+
+
+
+/* .service_all ----------------------- */
+.service_all {height: 1239px;}
+
+.servicebox_all_01 {clear: both; margin: auto; margin-top: 25px; margin-bottom: 20px;}
+.servicebox_life {float: left;}
+.servicebox_card {float: right;}
+
+.servicebox_all_02 {clear: both; margin: auto; margin-bottom: 20px;}
+.servicebox_parcel {float: left;}
+.servicebox_tax {float: right;}
+
+.servicebox_all_03 {clear: both; margin: auto; }
+.servicebox_giftcard {float: left;}
+.servicebox_smartpick {float: right;}
+
+
+/* 창업, 메뉴 ----------------------- */
+
+.start_menu_all {clear: both; height: 691px; background-color: #ccc;}
+	.start_up {float: left; width: 960px; height: 465px; background-color: #fff;}
+	.start_up_head {width: 960px; height: 120px; background-color: #44a;}
+	.start_up_title {margin: auto; width: 278px; height: 94px; background-color: #af8;}
+	.start_up_Box {width: 960px; height: 287px; background-color: #fff;}
+	.start_up_contentBox {margin: auto; width: 957px; height: 153px; background-color: #85a;}
+
+	.menu_Box {float: right; width: 960px; height: 465px; background-color: #888;}
+	.menu_Box_head {width: 960px; height: 120px; background-color: #44a;}
+	.menu_Box_title {margin: auto; width: 278px; height: 94px; background-color: #af8;}
+	.menu_Box_02 {width: 960px; height: 287px; background-color: #fff;}
+	.menu_Box_02_contentBox {margin: auto; width: 957px; height: 153px; background-color: #85a;}
+
+	.start_up_common {float: left; width: 212px; height: 68px; background-color: #fff;}
+  
+
+/* .service_all ----------------------- */
+.service_all {height: 691px;}
+.service_head {height: 178px;}
+.service_common {width: 1422px; height: 286px;}
+.service_common_03 {width: 278px; height: 94px;}
+.service_all_laptop {padding-top: 86px; box-sizing: border-box; margin: auto; width: 1422px; height: 287px; background-color: transparent;}
+
+.servicebox_life {float: left; margin-left: 9px; width: 222px; height: 287px; background-color: #ccc;}
+.servicebox_life_icon {width: 222px; height: 221px; background-color: #f8a;}
+.servicebox_life_title {width: 222px; height: 66px; background-color: #abc;}
+
+.servicebox_card {float: left; margin-left: 9px; width: 222px; height: 287px; background-color: #ccc;}
+.servicebox_card_icon {width: 222px; height: 221px; background-color: #f8a;}
+.servicebox_card_title {width: 222px; height: 66px; background-color: #abc;}
+
+.servicebox_parcel {float: left; margin-left: 9px; width: 222px; height: 287px; background-color: #ccc;}
+.servicebox_parcel_icon {width: 222px; height: 221px; background-color: #f8a;}
+.servicebox_parcel_title {width: 222px; height: 66px; background-color: #abc;}
+
+.servicebox_tax {float: left; margin-left: 9px; width: 222px; height: 287px; background-color: #ccc;}
+.servicebox_tax_icon {width: 222px; height: 221px; background-color: #f8a;}
+.servicebox_tax_title {width: 222px; height: 66px; background-color: #abc;}
+
+.servicebox_giftcard {float: left; margin-left: 9px; width: 222px; height: 287px; background-color: #ccc;}
+.servicebox_giftcard_icon {width: 222px; height: 221px; background-color: #f8a;}
+.servicebox_giftcard_title {width: 222px; height: 66px; background-color: #abc;}
+
+.servicebox_smartpick {float: left; margin-left: 9px; width: 222px; height: 287px; background-color: #ccc;}
+.servicebox_smartpick_icon {width: 222px; height: 221px; background-color: #f8a;}
+.servicebox_smartpick_title {width: 222px; height: 66px; background-color: #abc;}
+
+
+/* contentBox ----------------------- */
+.advice {display: none;}
+.recruit {display: none;}
+.consumer {display: none;}
+.pc_up_Box {display: none;}
+.call {display: none;}
+.callBox {display: none;}
+.pc {display: none;}
+.up {display: none;}
+
+
+/* .footBox ----------------------- */
+.footBox {height: 250px;}
+.foot_all {width: 1719px; height: 97px;}
+.addressBox {float: left; text-align: center; width: 940px; height: 97px;}
+.familyBox {margin: auto; width: 1719px; height: 57px;}
+.family_site {float: right; width: 335px; height: 57px; background-color: #222;}
+
+/*----------------------------------------------------------------*/
+} /*pcfull end*/

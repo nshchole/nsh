@@ -1,8 +1,0 @@
-@charset "UTF-8";
-/* rwd_seven_main.css */
-
-@import url("./rwd_seven_main_common.css");
-@import url("./rwd_seven_main_mobile.css");
-@import url("./rwd_seven_main_tablet.css");
-@import url("./rwd_seven_main_labtop.css");
-@import url("./rwd_seven_main_pcfull.css");

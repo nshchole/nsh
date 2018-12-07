@@ -14,7 +14,7 @@ h1{padding: 1rem; border-bottom: 1px solid #333; background-color: #7af; margin-
 
 /* 마우스 올리거나, focus 되었을 경우 해당 인디케이터 색상 변하기 */
 .view_indicator>ul>li>a:focus,
-.view_indicator>ul>li>a:hover{background-color: #f06; outline:0;}
+.view_indicator>ul>li>a:hover{background-color: #F5821F; outline:0;}
 
 /* 마우스 올리거나, focus 되었을 경우 말풍선 나오기 */
 .view_indicator>ul>li>a:focus > span,

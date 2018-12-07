@@ -1,0 +1,87 @@
+/* rwd_seven_main_tablet.css */
+
+/* tablet 768================================================== */
+@media screen and (min-width: 481px) and (max-width: 768px){
+  /* device 기준크기 : 768px */
+
+/* commonArea ==================== */
+
+.product_all {position: relative; height: 539px;}
+.product_head {position: relative; height: 100px;}
+.product_title {position: absolute; top: 0.875rem; left: 269px; width: 230px; height: 64px;}
+
+.oneplus_all {clear: both;}
+
+.product_in_001 {float: left; width: 185px; height: 334px;}
+.product_in_02 {width: 185px; height: 204px;}
+.product_in_03 {width: 185px; height: 129px;}
+
+.product_in_002 {float: right; width: 185px; height: 334px;}
+.product_in_04 {width: 185px; height: 204px;}
+.product_in_05 {width: 185px; height: 129px;}
+
+.service_common {width: 534px; height: 303px;}
+.service_common_02 {width: 228px; height: 303px;}
+
+.service_icon {width: 228px; height: 231px;}
+.service_common_03 {height: 72px;}
+
+.content_common {text-align: center; height: 127px;}
+
+
+/* .head_all ----------------------- */
+.head_all {height: auto;}
+.headBox {height: 116px;}
+.headBox_02 {margin-top: 18px; clear: both; width: 710px; height: 72px;}
+.logo {float: left; text-align: center; width: 160px; height: 72px;}
+.map {float: right; width: 80px; height: 72px;}
+.menu {float: right; width: 80px; height: 72px;}
+.addBanner {height: 586px;}
+
+
+/* .indicator ----------------------- */
+.view_indicator{width: 216px; height: 22px;}
+.view_indicator>ul>li{float: left; width: 26px; height: 100%; margin-right: 24px;}
+
+
+/* pb_all ----------------------- */
+.pb {position: absolute; top: 180px; left: 181px; width: 407px; height: 333px;}
+
+/* .service_all ----------------------- */
+
+.service_all {height: 1239px;}
+
+.servicebox_all_01 {clear: both; margin: auto; margin-top: 25px; margin-bottom: 20px;}
+.servicebox_life {float: left;}
+.servicebox_card {float: right;}
+
+.servicebox_all_02 {clear: both; margin: auto; margin-bottom: 20px;}
+.servicebox_parcel {float: left;}
+.servicebox_tax {float: right;}
+
+.servicebox_all_03 {clear: both; margin: auto; }
+.servicebox_giftcard {float: left;}
+.servicebox_smartpick {float: right;}
+
+
+/* contentBox ----------------------- */
+
+.call {position: relative; height: 138px;}
+.callBox {position: absolute; top: 20px; left: 106px; margin: auto;
+			text-align: center; width: 556px; height: 95px;}
+.pc_up_Box {clear: both; height: 128px;}
+.pc {float: left; width: 370px; height: 128px; background-color: #efe6ff;}
+.up {float: right; width: 370px; height: 128px; background-color: #f5f0ff;}
+.snsBox {clear: both; height: 80px;}
+.snsBox_in {margin: auto; width: 100%; height: 80px;}
+.sns_common {margin-right: 50px; float: left; width: 80px; height: 80px;}
+.sns_01 {margin-left: 18%;}
+
+
+/* footerBox ----------------------- */
+.footBox {position: relative; height: 168px;}
+.addressBox {position: absolute; text-align: center; top: 45px; left: 70px;
+		 width: 626px; height: 84px;}
+
+
+}/* //end tablet 768 */

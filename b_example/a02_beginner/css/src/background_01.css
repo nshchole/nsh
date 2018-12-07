@@ -1,0 +1,192 @@
+/* background_01.css */
+
+#wrap {width: 100%; height: auto; min-height: 10rem; background-color: #54aaca;}
+
+#headBox {width: 100%; height: auto;}
+
+h1 {padding: 1rem 0; width: 100%; height: auto; background-color: #a8f;
+	text-indent: 2rem;}
+
+#bgBox_01 {margin-top: 2rem; padding: 0 1rem; width: 100%; height: auto; min-height: 1rem;
+			background-color: #fff;}
+
+h2 {border-bottom: 0.2rem solid #a8f; margin-bottom: 1rem;}
+h3 {width: 100%; height: auto; padding: 0.5rem; box-sizing: border-box; background-color: #acf;}
+
+.icon {margin: auto; width: 80%; height: 30rem; border: 1px solid #333;
+		border-radius: 2rem 0.5rem 0 0.7rem;
+		/*box-shadow: 0.5rem 0.5rem 0.5rem #acf, -0.5rem -0.1rem 0.2rem #f06,
+					-0.8rem 1rem 0.2rem rgba(225,225, 0, 0.5);*/}
+
+.icon_01 {background-image: url("../../img/icon/icon_02.png");
+		  background-repeat: no-repeat; background-position: 20% -100%;
+		  /*transition: all 300ms linear;*/} 		/* image repeat position 항상 같이 쓰기 */
+.icon_01:hover{animation: exloding 1000ms infinite ease forwards;}
+
+@keyframes exloding {
+			0%{background-position: 20% -100%;}
+			100%{background-position: 20% 200%;}
+			  }
+		  /* background-position: x축 y축; (center top, center bottom, left...) - 기본은 0 0
+		 	 x와 y축은 의미상의 용어로 사용이 가능하다(top, left, right...)
+		 	 이때, top이나 left처럼 한쪽으로 위치를 잡고, 다른 위치 하나는 중심에 위치한다면,
+		 	 center라는 용어는 생략해도 된다. 단, 둘 모두 center라면 하나만 입력한다.
+			
+			*: background-position의 기능에서 용어를 이용한 위치는 그리 권장하지 않는다.
+				그래서 %의 수치나 정확한 수치를 입력하여 배치할 것을 권장.
+		  */
+
+.icon_02 {background-image: url("../../img/icon/icon_03.png");
+		background-repeat: no-repeat; background-position: 50% 50%;
+		background-size: 70% auto; transition: all 300ms linear;}
+		/* background-size : 내용 이미지의 크기를 지정하는 기능, cover / contain 가로크기 세로크기
+			conver - 꽉차게 (이미지가 잘릴 수 있음)
+			contain - 모든 이미지를 다 보이게 (이미지의 여백이 남을 수 있음)
+					  가로크기와 세로크기를 입력이 가능, 둘 중 하나는 입력하지 않으면 auto (비율유지)
+					  단, 세로값을 입력하고 가로크기는 자동으로 변형되게하려면 auto 세로크기;
+
+			---
+			현재 : background-size는 권고안으로 등록이 되지 않은 상태 (prefix, w3c에서 찾기);
+		*/ 
+
+.icon_02:hover {background-size: 120% auto;}
+
+.icon_03 {background-image: url("../../img/icon/icon_01.jpg");
+		  background-repeat: no-repeat; background-position: center;
+		  background-size: contain; background-color: #acf;}
+
+.icon_03>span {display: block; position: relative; z-index: -1;
+			   width: 0; height: 0; overflow: hidden; }
+
+
+.icon_04 {width: 3rem; height: 4rem; border-radius: 0.2rem;
+		  background-image: url("../../img/icon/mouse_icons.png");
+		  background-repeat: no-repeat;
+		  background-position: -20px -180px;}
+
+.exam {width: 100%; height: auto; background-color: #ddd;}
+.exam>ul {width: 100%; height: auto;}
+.exam>ul:after, exam>ul::after {content:" "; display: block; clear: both;}
+.exam>ul>li {margin: 1rem; float: left; border: 1px solid #333;
+			width: 110px; height: 120px; border-radius: 0.5rem;}
+.exam a{display: block; width: 100%; height: 100%;
+		background-image: url("../../img/icon/smashicons.png"); background-repeat: no-repeat;}
+.exam a>span{display: block; width: 0; height: 0; position: relative; z-index: -1; overflow: hidden;}
+
+.exam>ul>li:nth-child(1)>a{background-position: 0 -244px;}
+.exam>ul>li:nth-child(1)>a:hover{background-position: -232px 0;}
+.exam>ul>li:nth-child(1)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(1)>a:active{background-position: 0 0;}
+
+.exam>ul>li:nth-child(2)>a{background-position: 0 -125px;}
+.exam>ul>li:nth-child(2)>a:hover{background-position: -465px -125px;}
+.exam>ul>li:nth-child(2)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(2)>a:active{background-position: 0 0;}
+
+.exam>ul>li:nth-child(3)>a{background-position: -235px -375px;}
+.exam>ul>li:nth-child(3)>a:hover{background-position: -350px -250px;}
+.exam>ul>li:nth-child(3)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(3)>a:active{background-position: 0 0;}
+
+.exam>ul>li:nth-child(4)>a{background-position: 0 -250px;}
+.exam>ul>li:nth-child(4)>a:hover{background-position: -465px -375px;}
+.exam>ul>li:nth-child(4)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(4)>a:active{background-position: 0 0;}
+ 
+.exam>ul>li:nth-child(5)>a{background-position: -465px -125px;}
+.exam>ul>li:nth-child(5)>a:hover{background-position: -230px -250px;}
+.exam>ul>li:nth-child(5)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(5)>a:active{background-position: 0 0;}
+
+
+.exam>ul>li:nth-child(6)>a{background-position: -235px -375px;}
+.exam>ul>li:nth-child(6)>a:hover{background-position: -465px -375px;}
+.exam>ul>li:nth-child(6)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(6)>a:active{background-position: 0 0;}
+
+.exam>ul>li:nth-child(7)>a{background-position: -235px -250px;}
+.exam>ul>li:nth-child(7)>a:hover{background-position: -695px 250px;}
+.exam>ul>li:nth-child(7)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(7)>a:active{background-position: 0 0;}
+
+.exam>ul>li:nth-child(8)>a{background-position: -580px -375px;}
+.exam>ul>li:nth-child(8)>a:hover{background-position: -235px -250px;}
+.exam>ul>li:nth-child(8)>a:focus{background-position: -120px -125px;}
+.exam>ul>li:nth-child(8)>a:active{background-position: 0 0;}
+
+#bg_Area {padding: 1rem; margin: 3rem auto; width: 80%; height: auto; background-color: #cda;}
+
+.bg_area {margin: 1rem auto; padding: 2rem; border: 1rem dotted #64a;
+			width: 80%; height: 10rem; background-color: #fff; color: #fff; text-align: center; font-size: 2rem;
+			font-weight: bold; text-shadow: 0.3rem 0.3rem 0.1rem #000;
+			background-image: url("../../img/bg/city_02.jpg");
+			background-repeat: no-repeat; background-position: center;
+			background-size: 100%; transition: all 200ms linear;
+			background-color: #32a;}
+
+.bg_area:hover {background-size: 120%;}
+
+
+/* .area_01 {} - 기본은  border-box 까지 */
+.area_02 {background-clip: border-box;}
+.area_03 {background-clip: padding-box;}
+.area_04 {background-clip: content-box;}
+
+/* ============================= */
+
+.bg_img {background-image: url("../../img/bg/city_02.jpg");
+		background-repeat: no-repeat; background-position: center;
+		background-size: cover; transition: all 200ms linear; border-color: #fa0;}
+
+/* .img_01 {} - 기본은 padding-box */
+.img_02 {background-origin: border-box;}
+.img_03 {background-origin: padding-box;}
+.img_04 {background-origin: content-box;}
+
+
+/*
+* 배경색상을 정해진 요소에 채울경우 색상의 범위를 지정할 수 있다.
+	background-clip : border-box | padding-box | content-box ;
+
+* 배경 이미지를 정해진 요소의 크기만큼 채울경우 그 범위를 지정할 수 있다.
+	background-origin : border-box | padding-box | content-box ;
+
+* border-box의 의미는 외곽선의 영역까지 (padding, content포함)
+* padding-box의 의미는 padding의 영역까지 (border제외, contnet포함)
+* content-box의 의미는 실제 border, padding이 아닌 내용의 영역을 의미
+
+- background-clip, background-origin은 모두 css 새로운 속성 prefix
+
+*/
+
+
+#bgArea_02 {margin-bottom: 20rem;
+			width: 100%; height: auto; border: 2px solid #fa0;}
+
+#bgArea_02>div {width: 100%; min-width: 60rem; height: 8rem;
+				background-repeat: no-repeat; background-position: 50%;
+				background-size: cover;}
+
+#bgArea_02>.fixed {background-attachment: fixed; background-image: url("../../img/bg/city_02.jpg");}
+#bgArea_02>.scroll {background-attachment: scroll; background-image: url("../../img/bg/car_02.jpg");}
+
+/*
+	*브라우저 내에서 이미지를 position:fixed; 처리한 것처럼 배경이미지를 사용하게 만들 수 있는 기능
+	background-attachment:fixed | scroll;
+
+	하지만, 간단하게 이미지를 고정시키는 기능으로는 사용할 수 있으나,
+	parallax 기능을 이용하는 경우에는 scroll 기능으로 사용한다.
+
+*/
+
+#gradient {margin: auto; width: 80%; height: auto;}
+#gradient>div {padding: 1rem; box-sizing: border-box; width: 100%; height: 25rem; border: 1px solid #333;
+				margin-bottom: 2rem;}
+
+.linear_01 {
+	background-color: #fa0;
+	background-image: url("../../");
+	background-image: linear-gradient(#fa0, #f0a);
+}
+
+.linear_02 {background-image: linear-gradient(90deg, #fa0 30%, #f0a 60%, #acf);}
