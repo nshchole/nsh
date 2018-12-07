@@ -163,7 +163,7 @@ h3 {width: 100%; height: auto; padding: 0.5rem; box-sizing: border-box; backgrou
 #bgArea_02 {margin-bottom: 20rem;
 			width: 100%; height: auto; border: 2px solid #fa0;}
 
-#bgArea_02>div {width: 100%; min-width: 60rem; height: 8rem;
+#bgArea_02>div {width: 100%; min-width: 60rem; height: 15rem;
 				background-repeat: no-repeat; background-position: 50%;
 				background-size: cover;}
 
@@ -190,3 +190,26 @@ h3 {width: 100%; height: auto; padding: 0.5rem; box-sizing: border-box; backgrou
 }
 
 .linear_02 {background-image: linear-gradient(90deg, #fa0 30%, #f0a 60%, #acf);}
+
+.linear_03 {background-image: linear-gradient(135deg, #fa6, #fff 30%, #a8df24 30%, #a8df24);}
+
+.linear_04 {position: relative; background-image: linear-gradient(0deg, #afa, #59a);}
+.linear_04:before {content:" "; display: block; position: absolute; top: 0; left: 0;
+ 				   width: 100%; height: 100%; background-image: linear-gradient(0deg, #ea7, #faa, transparent);
+ 				   transition: all 500ms linear; opacity: 0.7;}
+.linear_04:hover:before {opacity: 0;}
+.radial_01 {background-image: radial-gradient(#fff 60%, #afa 30%, #278);}
+
+/*
+	background-image:url();
+	background-position: 0 0;
+	background-repear: ;
+	background-color: #fff;
+	background-clip:;
+	background-origin:;
+	background-size:;
+	background-attachment:; (안쓰면 스크롤)
+
+	background-image:linear-gradient(각도, 색A 위치%, 색B 위치%);
+
+*/
