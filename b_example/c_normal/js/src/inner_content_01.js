@@ -8,7 +8,7 @@
   02. html()       : html태그를 확인/제작 하는 메소드
   03. wrap()       : 선택한 요소의 부모요소를 제작 하는 메소드
   04. before()     : 선택요소의 이전(형제)에 요소를 제작/삽입하는 메소드
-  05. after()      : 선택 요소의 이후(형제)에 요소를 제작/삽입하는 메소드
+  05. after()      : 선택요소의 이후(형제)에 요소를 제작/삽입하는 메소드
   06. prepend()    : 선택요소의 자식의 앞에 요소를 제작/삽입하는 메소드 
   06-1. prependTo() : 앞뒤가 바뀜 (주어, 목적어)
   07. append()     : 선택요소의 자식의 뒤에 요소를 제작/삽입하는 메소드
@@ -30,10 +30,10 @@
   var h1Link = h1.html('<a href="#">'+ h1T + '와 <br />' + myText +'</a>');
   // console.log(h1Link);
 
-  var h1Wrap = h1.wrap('<div class="head_wrap"></div>');
+  var h1Wrap = $('').wrap('<div class="head_wrap"></div>');
   var headWrap = $('.head_wrap');
   headWrap.css({margin:'auto',
-                padding:1+'rem', 
+                padding:1+'rem',
                 width:60+'rem',
                 textAlign:'center'});
   // console.log( h1Wrap );
@@ -56,7 +56,7 @@
   // html()은 기존의 내용을 모두 삭제하고 새로 쓴다.
   gnb.html('<h2>navigation</h2>');
   // gnb.append('<h2>navigation</h2>');
-  // gnb.prepend('<h2>navigation</h2>');
+  // gnb.prepend('<h2>navigation</h2>'); 
 
     // headBox.find('.head_wrap').append('<div id="member"></div>');
     // var member = $('#member');
@@ -208,7 +208,7 @@ var lsLista = lsBox.children('li').eq(3).find('a');
 
 // a요쇼의 속성 target은 클릭시 이동처리하는 방법: _self(기본) | _blank(새창에서 띄우기) | _top(iframe상에서 이동을 막기위해 처리) | _parent(iframe상에서 이동을 막기위한 처리) 
 
-var re_lsLista = lsLista.attr({ 'href'   : 'http://naver.com', 
+var re_lsLista = lsLista.attr({ 'href'   : 'http://naver.com',
                                 'target' : '_blank',
                                 'class'  : 'more' });
 // console.log( re_lsLista );
@@ -273,10 +273,10 @@ var productlist = [
    // $('.product').eq(i).find('.shop_img').next().text(text[i]);
    // $('.product').eq(i).find('a').attr('href', link[i]);
 
-   prEq = $('.product').eq(i);
+  prEq = $('.product').eq(i);
 
-   prEq. find(.shop_img).css({ backgroundColor: productList[i].color });
-   prEq. find(.shop_img).find('p').eq(0).text( productList[i].text );
+  prEq. find(.shop_img).css({ backgroundColor: productList[i].color });
+  prEq. find(.shop_img).find('p').eq(0).text( productList[i].text );
   prEq. find(.shop_img).find('a').attr('href', productList[i].link );
 
  }
