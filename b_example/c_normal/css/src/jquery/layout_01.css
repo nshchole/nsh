@@ -1,0 +1,35 @@
+/* layout_01.css */
+
+#wrap {width: 980px; height: 850px; background-color: #ccc;}
+
+
+.homeBox {float: left; width: 980px; height: 30px; background-color:#888;}
+.home {float: left; width: 640px; height: 30px; background-color:#888;}
+.study {float: left; width: 95px; height: 30px; background-color: #555;}
+.education {float: left; width: 245px; height: 30px; background-color: #fff30d;}
+
+
+.headBox {float: left; width: 248px; height: 710px; background-color: #777;}
+.headBox_02 {width: 156px; height: 552px; background-color: #fff;}
+h1 {margin: auto; width: 156px; height: 106px; background-color: #fff;}
+li {margin: auto; width: 156px; height: 40px; background-color: #fa0;}
+.qna {margin: auto; width: 156px; height: 118px; background-color: #fff;}
+
+
+.viewBox {float: right; width: 732px; height: 710px; background-color: #adadad;}
+.view_bg_mesh {float: right; width: 732px; height: 50px; background-color: #fff;}
+
+
+.footBox {width: 980px; height: 110px; background-color: #fff;}
+.footBox_02 {clear: both; margin: auto; width: 900px; height: 64px; background-color: #ccc;}
+h2 {float: left; width: 70px; height: 64px; background-color: #fa0;}
+
+.footBox_sns {float: left; width: 90px; height: 64px; background-color: #fff;}
+.location {float: left; width: 90px; height: 64px; background-color: #fa0;}
+.snsBox {float: left; width: 90px; height: 64px; background-color: #fff;}
+	.youtube {float: left; width: 22px; height: 26px; background-color: #ff0000;}
+	.facebook {float: left; width: 22px; height: 26px; background-color: #4267b2;}
+	.cacao {float: left; width: 22px; height: 26px; background-color: #ffde00;}
+.addressBox {float: left; width: 390px; height: 64px; background-color: #fff;}
+
+
