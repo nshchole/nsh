@@ -4,32 +4,43 @@
 
 
 .homeBox {float: left; width: 980px; height: 30px; background-color:#888;}
-.home {float: left; width: 640px; height: 30px; background-color:#888;}
-.study {float: left; width: 95px; height: 30px; background-color: #555;}
-.education {float: left; width: 245px; height: 30px; background-color: #fff30d;}
+.home {text-align: center; float: left; width: 640px; height: 30px; background-color:#888;}
+.study {text-align: center; float: left; width: 95px; height: 30px; background-color: #555;}
+.education {text-align: center; float: left; width: 245px; height: 30px; background-color: #fff30d;}
+.arrow {}
 
 
 .headBox {float: left; width: 248px; height: 710px; background-color: #777;}
-.headBox_02 {width: 156px; height: 552px; background-color: #fff;}
-h1 {margin: auto; width: 156px; height: 106px; background-color: #fff;}
-li {margin: auto; width: 156px; height: 40px; background-color: #fa0;}
-.qna {margin: auto; width: 156px; height: 118px; background-color: #fff;}
+.headBox_02 {float: left; box-sizing: border-box;  padding: 109px 41px; width: 156px; height: 552px; background-color: #777;}
+h1 {text-align: center; margin: auto; width: 156px; height: 106px; background-color: #f3a;}
+li {border-bottom: 1px solid gray; text-align: center; margin: auto; width: 156px; height: 40px; background-color: #fa0;}
+.qna {margin: auto; text-align: center; width: 156px; height: 118px; background-color: #fff;}
 
 
 .viewBox {float: right; width: 732px; height: 710px; background-color: #adadad;}
-.view_bg_mesh {float: right; width: 732px; height: 50px; background-color: #fff;}
+.view_bg_mesh {float: left; height: 50px; background-color: #fff;}
 
 
-.footBox {width: 980px; height: 110px; background-color: #fff;}
-.footBox_02 {clear: both; margin: auto; width: 900px; height: 64px; background-color: #ccc;}
-h2 {float: left; width: 70px; height: 64px; background-color: #fa0;}
+.footBox {width: 980px; height: 112px; background-color: #fff;}
+.footBox_02 {position: relative; clear: both; margin: auto; width: 900px; height: 64px; background-color: #ccc;}
+h2 {float: left; margin-right: 30px; width: 70px; height: 64px; background-color: #fa0;}
 
 .footBox_sns {float: left; width: 90px; height: 64px; background-color: #fff;}
-.location {float: left; width: 90px; height: 64px; background-color: #fa0;}
-.snsBox {float: left; width: 90px; height: 64px; background-color: #fff;}
+.location {width: 90px; height: 20px; background-color: #fa0;}
+.snsBox {margin-right: 18px; width: 90px; height: 44px; background-color: #fff;}
 	.youtube {float: left; width: 22px; height: 26px; background-color: #ff0000;}
 	.facebook {float: left; width: 22px; height: 26px; background-color: #4267b2;}
 	.cacao {float: left; width: 22px; height: 26px; background-color: #ffde00;}
-.addressBox {float: left; width: 390px; height: 64px; background-color: #fff;}
+#addressBox {float: left; margin-right: 10px; width: 390px; height: 64px; background-color: #fff;}
+
+.familyBox {width: 96px; height: 128px;}
+
+.family_site_01 {width: 300px; height: 64px; background-color: #ccc;}
+.webpage {float: left; width: 96px; height: 64px; background-color: #555;}
+.greenart {float: left; width: 204px; height: 64px; background-color: #fff30d;}
+
+.family_site_02 {width: 300px; height: 64px; background-color: #ccc;}
+.cafe {float: left; width: 96px; height: 64px; background-color: #555;}
+.naver {float: left; width: 204px; height: 64px; background-color: #fff30d;}
 
 

@@ -1,4 +1,4 @@
-// make_jquery_01_result.js
+// make.jquery.js
 
 (function($) {
   // jquery start =======
