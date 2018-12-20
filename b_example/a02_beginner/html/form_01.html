@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- form_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/form_01.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>form_01</title>
+
+<style>
+	form {padding: 1rem; background-color: #ffc;}
+	fieldset {padding: 1rem;}
+	legend {background-color: #f77; padding: 0.5rem; color: #fff; font-weight: bold;
+			border-radius: 0.5rem;}
+	
+	input {height: 2rem; border: 2px solid #171717; text-indent: 0.5rem; font-size: 1.2rem;}
+</style>
+
+</head>
+<body>
+
+	<!-- layout -->
+	<div id="wrap">
+		<h1>form 기초 개념 이해하기1</h1>
+		<form action="" method="post">
+			<fieldset>
+				<legend>간단한 form 기초코드의 내용에 대한 이해</legend>
+				<label for="searchName">검색할 자료 이름을 입력하세요.</label>
+				<input type="text" id="searchName" name="searchBox" value="" placeholder="검색어를 입력하세요." /> 
+
+				<br />
+				<label for="idName">아이디를 입력하세요.</label>
+				<input type="text" id="idName" name="idBox" value="" placeholder="아이디를 입력하세요." /> 
+
+				<br />
+				<label for="pwName">비밀번호를 입력하세요.</label>
+				<input type="password" id="pwName" name="pwBox" value="" placeholder="비밀번호를 입력하세요." /> 
+
+				<br />
+				<label for="yourName">이름를 입력하세요.</label>
+				<input type="text" id="yourName" name="yourBox" value=""> 
+
+				<br />
+				<label for="numberName">연락처를 입력하세요.</label>
+				<input type="text" id="numberName" name="numBox" value=""> 
+
+			</fieldset>
+		</form>
+	</div>
+
+	<!-- script(jQuery) -->
+	<script src="../js/base/jquery-3.3.1.min.js"></script>
+	<script src="../js/base/jquery-ui.min.js"></script>
+	<script src="../js/src/form_01.js"></script>
+</body>
+</html>

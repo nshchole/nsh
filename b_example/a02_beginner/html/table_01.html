@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- table_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/table_01.css" />
+
+<!-- [if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>	
+<![endif]> -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>title name</title>
+
+<style>
+	.box_01 table,.box_01 tr,.box_01 th,.box_01 td {border-width: 4px; border-style: solid; border-color: #f06;
+																	border-spacing: 0; border-collapse: collapse;}
+	.box_01 table {border-color: #0f0;}
+	.box_01 th {background-color: #ff0;}
+	.box_01 td {background-color: #af8;}
+	.box_01 tr {background-color: #fca;}
+
+.box {padding: 2rem; margin-bottom: 1rem;}
+h2 {background-color: #cca; padding:0.5rem; font-size: 1.1rem; margin-bottom: 1rem;}
+/*====================================================*/
+
+table,th,td {border:1px solid #fa0; border-spacing: 0; border-collapse: collapse;}
+th,td {padding:0.5rem;}
+
+/*====================================================*/
+/*.t1 {background-color: #fff;}*/
+.table_col_1 {background-color: #acf;}
+.table_col_2 {background-color: #a0f;}
+.table_col_3 {background-color: #8ac;}
+
+</style>
+
+</head>
+
+<body>
+
+	layout
+	<h1>table 내용 이해하기</h1>
+
+	<div class="box_01">
+		<h2>table 기초내용</h2>
+		<table border="1" summary="표를 이해하기 위한 내용을 첫번째로 작성">
+			<caption>간단한 표 만들기</caption>
+
+			<tr>
+				<th>첫번째 셀 제목</th>
+				<td>두번째 셀만들기</td>
+				<td>세번째 셀만들기</td>
+			</tr>
+
+			<tr>
+				<th>다시 첫번째 셀 제목</th>
+				<td>다시 두번째 셀만들기</td>
+				<td>다시 세번째 셀만들기</td>
+			</tr>
+
+			<tr>
+				<th>세번째 셀 제목</th>
+				<td>내용1</td>
+				<td>내용2</td>
+				<td>내용3</td>
+			</tr>
+
+		</table>
+	</div>
+
+
+	<div class="box_02">
+		<h2>table 셀 설정기능 이해하기</h2>
+		<table>
+			<caption>테이블의 셀 기능을 추가설정</caption>
+			<tr>
+				<th>제목1</th>
+				<th>제목2</th>
+				<th>제목3</th>
+				<th colspan="2">제목4,5</th>
+				<th>제목5</th>
+			</tr>
+			<tr>
+				<td rowspan="2">1-1</td>
+				<td>1-2</td>
+				<td>1-3</td>
+				<td>1-4</td>
+				<td>1-5</td>
+			</tr>
+			<tr>
+				<td>2-1</td>
+				<td>2-2</td>
+				<td>2-3</td>
+				<td colspan="2" rowspan="2">2-4</td>
+				<td>2-5</td>
+			</tr>
+			<tr>
+				<td>3-1</td>
+				<td>3-2</td>
+				<td>3-3</td>
+				<td>3-4</td>
+				<td>3-5</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="box_03">
+		<h2>table</h2>
+		<table summary="colspan과 rowspan의 간단한 이해용연습">
+			<caption>셀합치기</caption>
+			=============================
+			<colgroup>
+				<col class="table_col_1" />
+				<col span="2" class="table_col_2" />
+ 
+			</colgroup>
+			=============================
+
+			<tr>
+				<th class="t1">1-1</th>
+				<th colspan="2">1-2</th>
+				<th>1-3</th>
+				<th colspan="3">1-4</th>
+				<th>1-5</th>
+				<th>1-6</th>
+			</tr>
+
+			<tr>
+				<th class="t1">2-1</th>
+				<th rowspan="2">2-2</th>
+				<th rowspan="3">2-3</th>
+				<th>2-4</th>
+				<th>2-5</th>
+				<th>2-6</th>
+			</tr>
+
+			<tr>
+				<th class="t1">3-1</th>
+				<th>3-2</th>
+				<th>3-3</th>
+				<th colspan="3" rowspan="3">3-4</th>
+				<th>3-5</th>
+				<th>3-6</th>
+			</tr>
+
+			<tr>
+				<th class="t1">4-1</th>
+				<th>4-2</th>
+				<th>4-3</th>
+				<th>4-4</th>
+				<th>4-5</th>
+				<th>4-6</th>
+			</tr>
+
+			<tr>
+				<th class="t1">5-1</th>
+				<th>5-2</th>
+				<th>5-3</th>
+				<th>5-4</th>
+				<th>5-5</th>
+				<th>5-6</th>
+			</tr>
+
+		</table>
+	</div>
+
+	<div class="box box_04">
+		<table summary="접근성을 고려하여 테이블을 제작하는 기술">
+			<caption>중국음식가격</caption>
+
+			<tr>
+				<th scope="col">메뉴</th>
+				<th scope="col" colspan="2">가격 및 칼로리</th>
+				<th scope="col">원산지</th>
+				<th scope="col">매움정도</th>
+				<th scope="col">재료</th>
+			</tr>
+
+			<tr>
+				<td>짜장면</td>
+				<td scope="row">5500원</td>
+				<td>500kcal</td>
+				<td>중국</td>
+				<td>보통</td>
+				<td>면,춘장,양파,고기</td>
+			</tr>
+
+
+			<tr>
+				<td>짬뽕</td>
+				<td scope="row">7000원</td>
+				<td>680kcal</td>
+				<td>국내산</td>
+				<td>매움</td>
+				<td>면,해산물,야채</td>
+			</tr>
+
+			<tr>
+				<td>탕수육</td>
+				<td scope="row">15000원</td>
+				<td>1500cal</td>
+				<td>한국</td>
+				<td>순한맛</td>
+				<td>돼지고기,전분,기름,야채</td>
+			</tr>
+
+		</table>
+	</div>
+
+<div class="box box_05">
+	<table summary="table의 필요성을 가계부를 작성하면서 이해해보자">
+		<caption>가계부작성</caption>
+		<thead>
+		<tr>
+			<th>번호</th>
+			<th>날짜</th>
+			<th>항목</th>
+			<th>수입</th>
+			<th>지출</th>
+			<th>내용</th>
+		</tr>
+		</thead>
+
+		<tbody>
+		<tr>
+			<td>1</td>
+			<td>18.12.20</td>
+			<td>점심값</td>
+			<td>0</td>
+			<td>5000원</td>
+			<td>된장찌개</td>
+		</tr>
+		</tbody>
+
+		<tbody>
+		<tr>
+			<td>2</td>
+			<td>18.12.20</td>
+			<td>커피값</td>
+			<td>0</td>
+			<td>2000원</td>
+			<td>아메리카노</td>
+		</tbody>
+
+		<tfoot>
+		<tr>
+			<td>-</td>
+			<td colspan="2">최종합계</td>
+			<td>0</td>
+			<td colspan="2">7000원</td>
+		</tr>
+		</tfoot>
+
+	</table>
+</div>
+
+	script(jQuery) -->
+	<script src="../js/base/jquery-3.3.1.min.js"></script>
+	<script src="../js/base/jquery-ui.min.js"></script>
+	<script src="../js/src/table_01.js"></script>
+</body>
+</html>
