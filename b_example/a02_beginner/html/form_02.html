@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- form_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/form_02.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>form 기초 내용이해하기2</title>
+</head>
+
+<body>
+	<!-- layout -->
+	<div id="wrap">
+		<h1>form 내용 기본형 이해하기</h1>
+		<div class="box form_basic1">
+			<h2>form 기본 형태</h2>
+			<form action="#" method="get || post">
+				<fieldset>
+					<legend>form 영역의 제목</legend>
+					<!-- form형식의 내용을 작성하는 곳 -->
+					<input type="text" id="동일한이름" name="" value="" />
+					<label for="동일한이름">설명하는 부분</label>
+
+					<!-- 가능하고 동작하지만 권장하지는 않음 		
+						<label for="">설명하는 부분
+							<input type="text" id="">
+						</label> 
+					-->
+
+					<!-- div, p, ul, li, .... 모두 사용가능 -->
+				</fieldset>
+			</form>
+		</div>
+		<!--  ====================================  -->
+		<div class="box form_basic2">
+			<form action="" method="post">
+				<fieldset class="view">
+					<legend>input type 형식 01: 입력형태</legend>
+					<div class="before">
+						<label for="idName">아이디<span class="hidden">를 입력하세요.</span></label> 
+						<input type="text" id="idName" name="idName" value="" />
+							<br />
+						<label for="pwName">비밀번호<span class="hidden">를 입력하세요.</span></label> 
+						<input type="password" id="pwName" name="pwName" value="" />
+
+						<p class="result">입력한 값: <span></span></p>
+					</div>
+
+					<div class="after">
+
+						<label for="serName">검색어 입력</label>
+						<input type="search" id="serName" name="serName" value="" required="required" /><br />
+						
+						<label for="urlName">주소 입력</label>
+						<input type="url" id="urlName" name="urlName" value="" required="required" /><br />
+	
+						<label for="emailName">메일 입력</label>
+						<input type="email" id="emailName" name="emailName" value="" required="required" /><br />	
+
+						<label for="telName">연락처</label>
+						<input type="tel" id="telName" name="telName" value="" required="required" /><br />
+					</div>
+
+					<!-- <button type="submit">중간체크</button> -->
+
+					<div class="yet">
+						<label for="month">월체크</label>
+						<input type="month" id="month" name="month" value="" /><br />
+
+						<label for="week">주체크</label>
+						<input type="week" id="week" name="week" value="" /><br />
+
+						<label for="date">날짜체크</label>
+						<input type="date" id="date" name="date" value="" /><br />
+
+						<label for="time">시간체크</label>
+						<input type="time" id="time" name="time" value="" /><br />
+
+						<label for="datetime">날짜시간체크</label>
+						<input type="datetime" id="datetime" name="datetime" value="" /><br />
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>input type 형식 02: 선택형태</legend>
+					<div class="radio">
+						<p>당신의 성별을 선택하세요.</p>
+						
+						<ul>
+							<li>
+								<input type="radio" id="ra_1" name="radioSel" value="남성">
+								<label for="ra_1"><i></i> 남성</label>
+							</li>
+							<li>
+								<input type="radio" id="ra_2" name="radioSel" value="여성">
+								<label for="ra_2"><i></i> 여성</label>
+							</li>
+							<li>
+								<input type="radio" id="ra_3" name="radioSel" value="양성" checked="checked">
+								<label for="ra_3"><i></i> 양성</label>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="checkbox">
+						<p>주말에 하고싶은 일을 선택하시오.</p>
+
+						<input type="checkbox" id="ch_01" name="checkSel" value="첫번째 체크" />
+						<label for="ch_01"><i></i>잠</label>
+
+						<input type="checkbox" id="ch_02" name="checkSel" value="두번째 체크" />
+						<label for="ch_02"><i></i>술먹기</label>
+
+						<input type="checkbox" id="ch_03" name="checkSel" value="세번째 체크" />
+						<label for="ch_03"><i></i>쉬기</label>
+
+						<input type="checkbox" id="ch_04" name="checkSel" value="네번째 체크" checked="checked" />
+						<label for="ch_04"><i></i>공부</label>
+
+						<input type="checkbox" id="ch_05" name="checkSel" value="다섯번째 체크" checked="checked" />
+						<label for="ch_05"><i></i>복습</label>
+					</div>
+
+					<div class="after">
+						
+						<label for="sel_21">수치/수량을 입력하세요.</label>
+						<input type="number" min="1" mat="20" step="4" name="num" id="num" value="">
+
+						<label for="sel_22">원하는 값을 선택하세요.</label>
+						<input type="range" min="1" mat="20" step="4" name="count" id="count" value="">
+ 
+						<label for="sel_23">색상을 선택/입력하세요.</label>
+						<input type="color" name="color" id="colorSel" value="">
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>input type 형식 03: 버튼의 기능</legend>
+					<div class="keep">
+						<input type="submit" name="submit" value="동의">
+						<input type="image" name="image" value="동의" src="../img/icon/icon_02.png" alt="이미지설명">
+						<input type="reset" name="reset" value="취소">
+						<input type="button" name="button" value="주소검색">
+						<input type="file" name="file" value="" multiple="">
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>input type 형식 04: 특수</legend>
+					<input type="hidden" id="boxTest" name="boxTest" value="test확인" />
+				</fieldset>
+
+				<fieldset>
+					<legend>input type 형식 05: 멀티기능</legend>
+					<div class="one">
+						<label for="textArea">필요한 사항을 입력</label>
+						<textarea name="textArea" id="textArea" cols="100" rows="5">
+<!-- readonly="readonly" -->
+약관 내용을 작성하여도 문제 없습니다.</textarea>
+					</div>
+
+					<div class="two">
+						<p>저녁에 먹을 음식을 선택하세요.</p>
+
+						<select name="se100" id="se100">
+							<option>선택하세요.</option>
+
+							<optgroup labe="고기류">
+							  <option value="beef">소고기</option>
+							  <option value="pork0">돼지고기</option>
+							  <option value="chicken">닭고기</option>
+							</optgroup>
+
+							<optgroup labe="마실것">
+							  <option value="water">물</option>
+							  <option value="cider">스트라이프</option>
+							  <option value="cocacola">코카콜라</option>
+							</optgroup>
+						</select>
+				</fieldset>
+			</div>
+			<div class="three">
+				<button type="submit">확인</button>
+				<button type="reset">취소</button>
+				<button type="button">버튼</button>
+				<button>버튼</button>
+			</div>
+			</form>
+		</fieldset>
+		</form>
+		</div>
+	</div>
+
+	<!-- script -->
+	<script src="https://unpkg.com/jquery"></script>
+	<script>
+		(function($) {
+			var before = $('.before');
+			var key1   = before.find('input').eq(0);
+			var key2   = before.find('input').eq(1);
+			var result = $('.result').children('span');
+			key1.on('keyup',function(){
+				var val1 = $(this).val();
+				result.text(val1);
+			});
+			key2.on('keyup',function() {
+				var val2 = $(this).val();
+				result.text(val2);
+			});
+
+// --------------------------------------------------\
+			var color = $('#colorSel');
+			color.on('change', function(e) {
+				console.log(e);
+				var colorVal = $(this).val();
+				console.log(colorVal);
+
+				$(this).attr({'type':'text'});
+				$(this).val(colorVal);
+			});
+// -----------------------------------------
+		$(document).on('mousemove',function(e) {
+			//console.log(e);
+			var x = e.originalEvent.pageX;
+			var y = e.originalEvent.pageY;
+			console.log(x, y);
+		});
+		})(jQuery);
+	</script>
+
+</body>
+</html>

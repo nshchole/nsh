@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- form_test.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/form_test.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>form 로그인 연습</title>
+</head>
+
+<body>
+
+	<!-- layout -->
+<div id="wrap">
+	<div class="box form_basic1">
+		<form action="#" method="post">
+			<fieldset class="view">
+				<legend class="hidden">로그인</legend>
+
+				<div class="id">
+				<label class="box3" for="idName">username</label>
+				<input class="box2" type="box3 text" id="idName" name="idName" value="" placeholder="Username"><br />
+				</div>
+				
+				<div class="pass">
+				<label class="box3" for="pwName">password</label>
+				<input class="box2" type="text" id="pwName" name="pwName" value="" placeholder="Password">
+				</div>
+
+				<ul>
+					<li>
+						<input type="radio" id="radio_1" name="radioSel" value="">
+						<label class="box4" for="radio_1"><i></i>Remember Me</label>
+						<input type="submit" name="submit" value="Sign in">
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+	<!-- script(jQuery) -->
+<!-- 	<script src="../js/base/jquery-3.3.1.min.js"></script>
+	<script src="../js/base/jquery-ui.min.js"></script>
+	<script src="../js/src/form_test.js"></script> -->
+</body>
+</html>
