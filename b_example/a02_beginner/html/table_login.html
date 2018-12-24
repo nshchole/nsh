@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- table_login.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/table_login.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>table login</title>
+</head>
+
+<body>
+
+  <!-- layout -->
+  <div id="wrap">
+
+    <form action="#" method="post">
+    <fieldset class="view"> <br />
+      <legend class="hidden">회원가입</legend>
+        <h1>회원가입</h1> <br />
+      <table border="1" summary="회원가입">
+      <caption class="hidden">회원가입</caption>
+        <tr>
+          <th>아이디</th>
+          <td><input type="text" id="idName" name="idName" value="" required="required" />
+          <button type="submit">중복확인</button>
+          </td>
+        </tr>
+
+        <tr>
+          <th>이름</th>
+          <td><input type="text" id="name" name="name" value="" required="required" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>성별</th>
+          <td><input type="radio" id="manWoman" name="manWoman" value="true" checked="checked" />
+            <label for="manWoman">남</label>
+            <input type="radio" id="manWoman2" name="manWoman2" value="true" />
+            <label for="manWoman2">여</label>
+          </td>
+        </tr>
+
+        <tr>
+          <th>암호</th>
+          <td><input type="text" id="pwName" name="pwName" value="" required="required" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>암호확인</th>
+          <td><input type="text" id="pwBoxCheck" name="pwBoxCheck" value="" required="required" /> *같은 암호를 입력하세요
+          </td>
+        </tr>
+
+        <tr>
+          <th>이메일</th>
+          <td><input type="text" id="email" name="email" value="" required="required" />@
+          <input type="text" id="email" name="email" value="" required="required" />
+          <select name="sel" id="sel">
+            <option>naver.com</option>
+              <optgroup value="mail">
+                <option value="google">gmail.com</option>
+                <option value="daum">hanmail.net</option>
+              </optgroup>
+          </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>주소</th>
+          <td><input type="text" id="address" name="address" value="" required="required" />
+          <button type="submit">주소찾기</button>
+          </td>
+        </tr>
+
+        <tr>
+          <th>휴대폰</th>
+          <td><input type="radio" id="skt" name="skt" value="true" checked="checked" />
+            <label for="manWoman">skt</label>
+            <input type="radio" id="kt" name="kt" value="true" />
+            <label for="manWoman2">kt</label>
+            <input type="radio" id="lgu" name="lgu" value="true" />
+            <label for="manWoman2">lgu+</label> <br />
+
+          <select name="num" id="num">
+            <option>010</option>
+              <optgroup value="phone">
+                <option value="010">010</option>
+                <option value="016">016</option>
+              </optgroup>
+          </select>
+
+            <input type="text" id="numberBox1" name="numberBox1" value="" />-
+            <input type="text" id="numberBox2" name="numberBox2" value="" />-
+            <input type="text" id="numberBox3" name="numberBox3" value="" />
+            
+          </td>
+        </tr>
+
+        <tr>
+          <th>관심</th>
+          <td>
+            <input type="checkbox" id="shopping" name="shopping" value="" />
+            <label for="shopping">쇼핑</label>
+
+            <input type="checkbox" id="game" name="game" value="" />
+            <label for="game">게임</label>
+
+            <input type="checkbox" id="travel" name="travel" value="" />
+            <label for="travel">여행</label>
+
+            <input type="checkbox" id="ect" name="ect" value="" />
+            <label for="ect">기타</label>
+          </td>
+        </tr>
+        
+        <tr>
+          <th>자기소개</th>
+          <td class="mymy">
+            <input type="text" id="my" name="my" value="" required="required" />
+          </td>
+        </tr>
+
+      </table>
+
+      <div class="check">
+        <tr>
+          <th hidden="ok"></th>
+            <td class="self">
+            <button type="submit">확인</button>
+            <button type="reset">다시입력</button>
+            </td>
+        </tr>
+      </div>
+
+
+    </fieldset>
+    </form>
+
+  </div>
+
+  <!-- script(jQuery) -->
+<!--   <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/table_login.js"></script> -->
+</body>
+</html>

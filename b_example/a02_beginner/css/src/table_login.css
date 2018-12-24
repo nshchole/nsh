@@ -1,0 +1,24 @@
+/* table.login.css */
+
+form, fieldset, legend, label {margin: 0; padding: 0; border: 0;}
+
+table {margin: auto;}
+
+h1 {text-align: center;}
+
+.mymy input[type="text"] {display: block; width: 540px; height: 188px;}
+
+tr {background-color: #fffff0;}
+
+#idName {width: 185px; height: 14px;}
+#name {width: 185px; height: 14px;}
+#pwName {width: 185px; height: 14px;}
+#pwBoxCheck {width: 185px; height: 14px;}
+#email {width: 185px; height: 14px;}
+#address {width: 185px; height: 14px;}
+
+#numberBox1 {width: 60px; height: 14px;}
+#numberBox2 {width: 60px; height: 14px;}
+#numberBox3 {width: 60px; height: 14px;}
+
+.check {margin-left: 800px;}

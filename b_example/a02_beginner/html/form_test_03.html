@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- form_test_03.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/form_test_03.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>form_test_03</title>
+</head>
+
+<body>
+
+  <!-- layout -->
+  <div id="wrap">
+    <h1>회원가입<span class="hidden">페이지만들기</span></h1>
+
+    <from action="" method="post">
+      <fieldset>
+        <legend class="hidden">회원가입 내용 양식</legend>
+    
+      <colgroup>
+        <col class="title">
+        <col class="content">
+      </colgroup>
+
+      <table summary="테이블을 이용한 회원가입페이지  생성하기">
+        <caption class="hidden">회원가입페이지 상세내용</caption>
+
+        <thead class="hidden">
+          <tr>
+            <th>분류</th>
+            <th>내용작성</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <th><label for="in_01">아이디</th>
+            <td>
+              <input type="text" id="in_01" class="input-text" name="inName" value="" placeholder="id입력" />
+              <button type="button" class="check-btn">
+                <span class="hidden">아이디</span>중복확인
+              </button>
+            </td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_02">이름</th>
+            <td>
+              <input type="text" id="in_02" class="input-text" name="userName" value="" placeholder="이름입력" />
+            </td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_03">성별
+              <span class="hidden">을 선택하세요.<br /> 기본은 남성입니다.</span></label>
+            </th> 
+            <td>
+              <input type="radio" id="in_03" name="gender" value="남성" checked />
+              <label for="in_03">남성</label>
+              <input type="radio" id="in_03-1" name="gender" value="여성" />
+              <label for="in_03-1">여성</label>
+            </td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_04">암호
+              <span class="hidden">여덟자리이상 열다섯자리 이하의 글자를 입력하세요.</span></th> 
+                </label>
+            <td>
+              <input type="password" id="in_04" class="input-text" name="pwName" value="" 
+              placeholder="비밀번호" />
+            </td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_05">암호확인
+              <span class="hidden">이전에 작성된</span>암호확인
+              <span class="hidden">입니다. 다시한번 동일하게 작성하세요.</span>
+                </label>
+            </th> 
+            <td>
+              <input type="password" id="in_05" class="input-text" name="pwName2" value="" 
+              placeholder="비밀번호 확인" />
+              <span class="in_text"> <!-- 이미지내용 --> </span>
+            </td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_06">이메일</label></th>
+            <td class="mail_area">
+              <input type="text" id="in_06" name="firstMailName" value="" />
+              <label for="in_06-1" class="hidden">메일 주소를 작성하세요.</label>
+              <span class="in_text"> <!--이미지 내용 --> </span>
+              <input type="text" id="in_06-1" name="lastMailName" value="" />
+
+              <select name="mailSel" id="in_06-2">
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.com</option>
+                <option value="google">google.com</option>
+                <option value="nate">nate.com</option>
+                <option value="yahoo">yahoo.com</option>
+              </select>
+
+              <label for="in_06-2" class="hidden">이메일주소를 선택하세요</label>
+            </td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_07">주소</label></th> 
+            <td>
+              <input type="text" id="in_07" class="input-text" name="addName" value="" placeholder="주소입력" />
+              <button type="button" class="check-btn">주소찾기</button>
+            </td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_08">휴대폰</label></th> 
+            <td>
+              <input type="radio" id="tel_01" name="telecom" value="">
+              <label for="tel_01">sk t<span class="hidden">elecom</span></label>
+
+              <input type="radio" id="tel_02" name="telecom" value="">
+              <label for="tel_02">kt<span class="hidden">telecom</span></label>
+
+              <input type="radio" id="tel_03" name="telecom" value="">
+              <label for="tel_03">lg u<span class="hidden">plus telecom</span></label>
+            </td>
+          </tr>
+
+          <input type="tel" id="">
+
+          <tr> 
+            <th><label for="in_09">관심</th> 
+            <td><input type="checkbox" name="check"></td>
+          </tr>
+
+          <tr> 
+            <th><label for="in_10">자기소개</th> 
+            <td></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="check_btn">
+        <input type="reset" name="remove" value="다시입력" />
+        <input type="submit" name="send" value="확인" />
+      </div>
+
+      </fieldset>
+    </from>
+
+  </div>
+
+  <!-- script(jQuery) -->
+<!--   <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/form_test_03.js"></script> -->
+</body>
+</html>
