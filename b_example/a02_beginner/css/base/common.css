@@ -3,3 +3,15 @@
 /* common. css */
 .hidden{display: block; width: 0; height: 0; overflow: hidden; position: absolute; z-index: -100;}
 .clearfix:after, .clearfix::after {content: " "; display: block; width: 0; height: 0; clear: both;}
+
+.table_design thead,
+.table_design tbody,
+.table_design tfoot,
+.table_design th:first-of-type,
+.table_design td:first-of-type {border-left: 0;}
+
+.table_design thead,
+.table_design tbody,
+.table_design tfoot,
+.table_design th:last-of-type,
+.table_design td:last-of-type {border-left: 0;}
