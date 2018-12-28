@@ -39,7 +39,7 @@ form>fieldset:first-of-type{width: 100%; height:auto; min-height:10rem;
 
 .join_form:last-of-type{border: 0;}
 .join_form>dt{float: left; padding:8px 8px 10px 30px; box-sizing: border-box;
-  width:27%; height:auto; min-height: 40px; background-color: #ffa2bd;
+  width:27%; height: 40px; min-height: 40px; background-color: #ffa2bd;
   font-family:'맑은고딕', malgum-gothic, sans-serif; font-size:1.5rem; font-weight: bold;}
 
 .join_form>dt>label{width: 100%; height: 100%;}
@@ -61,26 +61,72 @@ form>fieldset:first-of-type{width: 100%; height:auto; min-height:10rem;
 
 
 .join_form>dd{float: right; padding:8px 20px 6px 20px; box-sizing: border-box;
-  width: 70%; height:auto; min-height: 40px; background-color: #dfdfdf;}
+  width: 70%; height: 40px; min-height: 40px; background-color: #dfdfdf;}
 
 
 .join_form:nth-of-type(8)>dt{min-height:5.3rem;}
 .join_form:nth-of-type(8)>dd{min-height:5.3rem;}
 
-.join_form:last-of-type>dt{min-height:5.3rem;}
-.join_form:last-of-type>dd{min-height:5.3em;}
+.join_form:last-of-type>dt{height: 0.8rem;}
+.join_form:last-of-type>dd{height: 0.8rem;}
 
 
-/* dd내부정리 ========================= */
+/* dd내부 정리 ----------------------- */
+.text-box{margin-right:0.3rem; width: 230px; height: 25px; background-color:transparent; 
+  border: 0; border-bottom:2px solid #1166c9;}
+.btn-check{margin-right:0.3rem; width: 80px; height: 30px; background-color: #1166c9; color:#fff;
+  font-weight: bold; border-radius:0.125rem;}
 
-.text-box {margin-right: 0.3rem; width: 230px; height: 25px; background-color: transparent;
-  border: 0; border-bottom: 2px solid #1166c9;}
-.btn-check {margin-right: 0.3rem; width: 80px; height: 30px; background-color: #1166c9; color: #fff; font-weight: bold; border-radius: 0.125rem;}
+.duplication-check{
+  display: inline-block; width: 22px; height: 22px;
+  padding-top: 0.3rem; 
+  /*background-origin:padding-box;*/
+  background-position:-45px -126px;}
+.plus{background-position:-11px -126px;}
 
-.duplication-check {display: inline-block; margin-top: 22px; width: 22px;
-  padding-top: 0.3rem;  /*background-origin: padding-box;*/
-  background-position: -45px -124px;}
-.duplication-plus {background-position: -11px -126px;}
+.gender label{float: left; width: 80px; height: 26px; margin-right:30px; line-height:26px; font-size:1.5rem; font-family:"맑은고딕",malgum-gothic;}
+.gender i{float: left; width: 26px; height: 26px; background-position:-45px -170px;}
+.gender input[type="radio"]{position: relative; z-index: -1; width: 0; height: 0; overflow: hidden; }
+.gender input[type="radio"]:checked + label>i{background-position-x:-10px;}
+
+/* email============================== */
+.email>.text-box {width: 30%;}
+.email>dl.text-box {float: right; height: 26px; position: relative; z-index: 100;}
+.email>dl.text-box button {border: 0; width: 100%; height: 100%; background-color: transparent; text-align: left; text-indent: 0.5rem;}
+
+.email>dl.text-box dt {width: 100%; height: 100%; padding-bottom: 2px;}
+.email>dl.text-box dt i {float: right; width: 18px; height: 100%; background-position: -14px -128px;}
+.email>dl.text-box dd {width: 100%; height: auto; display: none;}
+.email>dl.text-box dd>ul {width: 100%; height: auto;}
+.email>dl.text-box dd>ul<li {width: 100%; height: 28px; background-color: #fff; border-bottom: 1px solid #ff558d; box-sizing: border-box;}
+.email>dl.text-box:hover dd {display: block;}
+
+/* ============================== */
+.telecom_check {margin-bottom: 10px; width: 100%; height: 28px;}
+.telecom_check>input {position: relative; z-index: -1; width: 0; height: 0; overflow: hidden;}
+.telecom_check>label {width: 80px; height: 26px; margin-right: 30px; text-transform: uppercase;
+            font-family: "맑은고딕", malgum-gothic; font-size: 1.5rem; word-spacing: -0.5rem;
+            vertical-align: top;}
+.telecom_check>label:last-of-type {margin-right: 0;}
+
+label[for="member_08-2"]:after {content: "U+"; vertical-align: top;}
+
+.telecom_check i {display: inline-block; width: 26px; height: 26px; background-position: -45px -170px;}
+.telecom_check input:checked + label>i {background-position-x : -10px;}
+
+.tel_number {width: 100%; height: 28px;}
+.tel_number> .text-box {width: 29%; height: 100%;}
+.tel_number>span {margin-left: 0.1rem; margin-right: 0.2rem;}
+
+/* ============================== */
+.favorite>input {margin: 0; position: relative; z-index: -1; width: 0; height: 0; overflow: hidden;}
+.favorite>label {width: 80px; height: 26px; margin-right: 30px; text-transform: uppercase;
+            font-family: "맑은고딕", malgum-gothic; font-size: 1.5rem; word-spacing: -0.5rem;
+            vertical-align: top;}
+.favorite>label>i {display: inline-block; width: 26px; height: 26px; background-position: -45px -213px;}
+.favorite>input:checked + label>i {background-position-x: -10px;}
+
+#member_10 {width: 100%; height: auto; min-height: 10rem; border: 1px solid #1166c9; box-sizing: border-box; font-size: 1.1rem; font-family: "맑은고딕", malgum-gothic; line-height: 110%;}
 
 /* fieldset:last-of-type ============================== */
 
