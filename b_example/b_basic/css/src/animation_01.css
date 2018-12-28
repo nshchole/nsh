@@ -140,10 +140,58 @@ p {background-position: 0 0;}
 
 
 .ani_box li:nth-child(1) {animation-name: oneFrame; animation-duration: 1000ms;
-      animation-iteration-count: 1; animation-timing-function: linear;}
+      animation-iteration-count: 2; animation-direction: alternate;}
+
+.ani_box li:nth-child(2) {animation-name: oneFrame; animation-duration: 2000ms;
+      animation-iteration-count: infinite; animation-direction: alternate-reverse;}
+
 @keyframes oneFrame{
-  from {transform:translate(0); background-color: #0af;}
-  to {transform:translate(30rem); background-color: #f07;}
+  0% {transform:translate(0); background-color: #0af;}
+  50% {transform: translate(10rem, 3rem);}
+  100% {transform:translate(30rem); background-color: #f07;}
+}
+
+.ani_box li:nth-child(3)
+{animation-name:twoFrame;
+ animation-duration: 3000ms;
+ animation-iteration-count: 3;
+ animation-timing-function: ease-in;
+ /*animation-direction: alternate;*/
+ animation-fill-mode: backwards;
+}
+
+@keyframes twoFrame {
+ 0% {transform: translate(0) rotate(0deg) scale(1);}
+ 100% {transform: translate(90rem) rotate(720deg) scale(2);}
+}
+
+.ani_box:hover li:nth-child(4) {animation-play-state: running;}
+
+.ani_box:hover li:nth-child(5) {
+ animation-name:threeFrame;
+ animation-duration: 1000ms;
+ animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-fill-mode: forwards;
+ animation-timing-function: ease;
+}
+
+@keyframes threeFrame {
+  0% {background-color: #f06;}
+  100% {background-color: #fa0; width: 500px; transform: rotate(360deg) scale(2);}
+}
+
+.ani_box:hover li:nth-child(6) {
+/* animation: name(이름) duration(시간) count(반복) direction(뱡향); */
+  animation: set 2000ms 5 alternate;
+}
+
+@keyframes set {
+  0%{width: 100px; height: 100px; background-color: #f07;}
+  50%{transform: translate(3rem) rotate(360deg);}
+  100%{width: 500px; height: 300px; background-color: #fff;}
+
+}
 
 
 /*.check:checked + ul>li {transform: translate(10rem); transition: all 1000ms;}*/
@@ -154,10 +202,15 @@ p {background-position: 0 0;}
     animation-name :;  -- animation 기능을 수행할 함수(@keyframes)를 선택
     animation-duration :;  -- animation 진행할 시간
     animation-direction :;  -- animation이 종료 후에 진행할 방향을 설정
+       - normal | reverse | alternate | alternate-reverse
+      
+
     animation-fill-mode :;  -- animation 시작하기전/후 어떻게 적용할것인가
+       - none | forward | backwrad | both
     animation-iteration-count :;  -- animation 반복여부, 무한반복( infinite )
     animation-timing-function :;  -- 속도조절
     animation-play-state :;  -- 멈춤, 재생설정
+       - running | pause
     animation-delay :;  -- 지연시간
 
 --------------------------------------------------------------------------------------------
