@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- jquery_on_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/jquery_on_02.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>jquery on 02</title>
+</head>
+
+<body>
+
+  <!-- layout -->
+  <div id="wrap">
+    <h1>on 메소드 이해하기2</h1>
+    <h2>mouseenter/mouseover, mouseleave/mouseout</h2>
+    <div class="mouse_event">
+      <p class="mouseenter">mouseenter
+        <strong>내부 : <span class="in"></span>
+        </strong>
+        마우스외곽 : <span class="out"></span>
+      </p>
+
+      <p class="mouseover">mouseover
+        <strong>내부 : <span class="in"></span>
+        </strong>
+        마우스외곽 : <span class="out"></span>
+      </p>
+    </div>
+    
+    <h2>change</h2>
+    <div class="change">
+    <label for="sel">신년 소망을 선택하세요.</label>
+    <select name="" id="sel" class="sel">
+      <option>선택하세요.</option>
+      <option value="pay">건물주</option>
+      <option value="size">44사이즈</option>
+      <option value="face">성형</option>
+      <option value="travel">여행하기</option>
+      <option value="etc">etc</option>
+    </select>
+    <p>소망은<span></span>이시군요?</p>
+    </div>
+
+    <!-- scroll ========================== -->
+    <h2>scroll</h2>
+    <div class="position">
+     <p class="fix">현재 브라우저에 고정되었습니다.</p>
+    </div>
+    <div class="offset">
+      <p class="por">offest: <span></span></p>
+      <p class="pof">offest: <span></span></p>
+    </div>
+  </div>
+
+  <!-- script(jQuery) -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/jquery_on_02.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* jquery_on_04.css */
+
+#wrap {width: 100%; height: 100%; background-color: #fff;}
+
+#wrap>div{padding: 1rem; box-sizing: border-box; width: 100%; height: 100%; font-weight: bold;}
+
+h2 {font-size: 3rem; border: 2px solid #fff; border-left: 0; border-right: 0; text-indent: 1rem;}
+
+.layout_01 {background-color: #1ca;}
+.layout_02 {background-color: #fa0;}
+.layout_03 {background-color: #28a8ff;}
+.layout_04 {background-color: #ff3aab;}
+.layout_05 {background-color: #4848ab;}
