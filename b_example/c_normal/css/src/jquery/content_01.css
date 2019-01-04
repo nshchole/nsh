@@ -1,0 +1,15 @@
+/* content_01.css */
+
+#wrap {width: 100%; height: auto;}
+
+.content {margin: auto; width: 480px; height: auto; background-color: #29d;}
+
+.titleBox {position: fixed; width: 480px; height: 30px; background-color: #fa0;}
+li {float: left; border-right: 1px solid #fff; box-sizing: border-box; text-align: center; width: 120px; height: 30px; background-color: #abf;}
+
+.contentBox {width: 480px; height: auto; background-color: #aff;}
+
+.con {margin: auto; width: 450px; height: 250px; background-color: #fff;
+      border-bottom: 1px solid #403; box-sizing: border-box;}
+
+
