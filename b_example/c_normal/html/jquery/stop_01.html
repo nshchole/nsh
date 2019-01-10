@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- stop_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../../css/base/reset.css" />
+<link rel="stylesheet" href="../../css/base/common.css" />
+<!-- <link rel="stylesheet" href="../../css/src/jquery/stop_01.css" /> -->
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<title>title name</title>
+
+<style>
+/*  .box {width: 50px; height: 50px; background-color: #777; text-align: center; line-height: 50px; color: #fff;}*/
+/*  button {padding: 0.5rem; cursor: pointer;}*/
+
+.tab_menu{margin: auto; margin-bottom: 3rem; height: auto;
+  border-bottom: 1px solid  #333;}
+
+
+.tab{width: 900px;}
+.tab>ul{width: 100%; height:40px;}
+.tab li{float: left; padding-right: 0.2rem; box-sizing: border-box;
+  width: 25%; height: 100%; }
+.tab li:last-child{padding-right:0;}
+.tab li>a{display: block; width: 100%; height: 100%; text-align: center;
+  line-height:40px; background-color: #dfdfdf; color:#171717;}
+.tab li.active>a{background-color: #acc; font-weight: bold;} 
+
+.content{padding:1rem; box-sizing:border-box; 
+  width: 100%; height: 40rem; background-color: #cdd;}
+.content>div{width: 100%; height: 100%; display: none;}  
+.content>div:first-of-type{display: block;}
+
+/* ===========================================  */
+
+
+.mob{width: 480px;}
+.mob>ul{position: relative; z-index: 500; 
+        margin-bottom: 0.5rem; width: 80%; height:40px; }
+.mob li{width: 100%; height: 100%; background-color: #dfdfdf;
+      box-shadow:0.1rem 0.1rem 0.1rem #333; display: none;}
+
+.mob li>a{display: block; margin:0.2rem 0; width: 100%; height: 100%; text-indent:1rem; line-height: 40px; color:#171717; }
+
+.mob li.active{display: block;}
+.mob li.active>a{background-color: #acc; font-weight: bold;}
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- layout -->
+<!--   <div class="box">box</div>
+  <button type="button" class="start">start</button>
+  <button type="button" class="stop">stop</button> -->
+
+  <div class="tab_menu tab">
+    <h2 class="hidden">반응형웹에따른 탭메뉴형식변형하기(900,480)</h2>
+    <ul>
+      <li class="active"><a href="#">menu_01</a></li>
+      <li><a href="#">menu_02</a></li>
+      <li><a href="#">menu_03</a></li>
+      <li><a href="#">menu_04</a></li>
+    </ul>
+    <div class="content">
+      <div>content_01<br />lorem100</div>
+      <div>content_02<br />lorem50</div>
+      <div>content_03<br />lorem30</div>
+      <div>content_04<br />lorem40</div>
+    </div>
+  </div>
+  <!--  ==========================  -->
+  <div class="tab_menu mob">
+    <h2 class="hidden">반응형웹에따른 탭메뉴형식변형하기(900,480)</h2>
+    <ul>
+      <li class="active"><a href="#">menu_01</a></li>
+      <li><a href="#">menu_02</a></li>
+      <li><a href="#">menu_03</a></li>
+      <li><a href="#">menu_04</a></li>
+    </ul>
+    <div class="content">
+      <div>content_01<br />lorem100</div>
+      <div>content_02<br />lorem50</div>
+      <div>content_03<br />lorem30</div>
+      <div>content_04<br />lorem40</div>
+    </div>
+  </div>
+
+  <!-- script(jQuery) -->
+  <script src="../../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+  <script>
+
+(function($) {
+
+  var winWidth = $(window).width();
+  var mobWidth = 640;
+  var nowDevice = '';
+
+// ========================================================================================
+  var myDevice = function(device){    
+    if(device <= mobWidth){ nowDevice = 'mobile'; }else{ nowDevice = 'pc'; }
+    return nowDevice;
+  };
+  var beforeDevice = myDevice(winWidth);
+  console.log(beforeDevice);
+// ========================================================================================
+  var tabMenu = $('.tab_menu');
+  var devideWidth = function(device){
+    // if(device <= mobWidth){ tabMenu.addClass('mob'); }else{ tabMenu.addClass('tab'); }
+    (device <= mobWidth) ? tabMenu.addClass('mob'); : tabMenu.addClass('tab');
+  };
+  devideWidth(winWidth);
+// ========================================================================================
+  $(window).on('resize',function() {
+    var nowWinWidth = $(window).width();
+    var afterDevice = myDevice(nowWinWidth);
+    if(winWidth !== nowWinWidth && beforeDevice !== afterDevice){
+        location.reload();
+    }
+  });
+
+  
+
+
+
+  // tab_menu 사용
+  //step1 : 타블렛영역 처리
+
+  var tablet = $('.tab');
+  var tabMenu = tablet.children('ul').children('li');
+  var tabCon = tablet.children('.content');
+
+  tabMenu.on('click',function(e) {
+    e.preventDefault();
+    var _this = $(this);
+    var index = _this.index();
+    _this.addClass('active');
+    _this.siblings('li').removeClass('active');
+
+    tabCon.children('div').eq(index).show();
+    tabCon.children('div').eq(index).siblings('div').hide();
+  });
+
+  tabMenu.find('a').on('focus',function(e) {
+    e.preventDefault();
+    $(this).on('keyup', function(evt) {
+      evt.preventDefault();
+      // console.log(evt.keyCode);
+
+      // 키보드가 tab버튼일경우 다른 tab_menu로 이동
+      // 키보드가 화살표 좌,우 방향키일경우 옆 버튼으로 이동
+      // tab:9  , 왼방향:37, 위:38, 오른쪽 방향: 39, 아래:40
+      var ek = evt.keyCode;
+
+      // if(ek == 9){}
+      // else if(ek == 37 || ek ==38){}
+      // else if(ek == 39 || ek == 40){}
+
+      // (ek == 9) ? /*참 */ : (ek == 37) ?/* 37이면 */ : (ek == 39)? : ;
+
+
+
+      switch(ek){
+        // case 9:
+        //   $('.mob').find('li').eq(0).children('a').focus();
+        // break;
+
+        case 37:
+        case 38:
+          $(this).parent().prev('li').children('a').focus();
+        break;
+
+        case 39:
+        case 40:
+          $(this).parent().next('li').children('a').focus();
+        break;
+      }
+    });
+  });
+
+// ===================================================================
+var mobile  = $('.mob');
+var mobMenu = mobile.children('ul');
+var mobList = mobMenu.children('li');
+var mobCon  = mobile.find('.content');
+
+mobList.on('click',function(e) {
+  e.preventDefault();
+  // e.stopPropagation();
+  var viewMenu = mobMenu.hasClass('view') == false;
+   
+  if(viewMenu){
+    mobList.show();
+    mobMenu.addClass('view');
+  }else{
+    var i = $(this).index();
+    // console.log(i);
+    mobCon.children('div').eq(i).show();
+    mobCon.children('div').eq(i).siblings('div').hide();
+
+    mobMenu.removeClass('view');
+    mobList.eq(i).addClass('active');
+    mobList.eq(i).siblings('li').removeClass('active');
+    mobList.eq(i).siblings('li').hide();
+  }
+
+});
+
+})(jQuery);
+
+  </script>
+</body>
+</html>

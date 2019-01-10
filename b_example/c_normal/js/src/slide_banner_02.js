@@ -24,9 +24,9 @@
 
   // step_02 오른쪽 버튼 클릭하여 오른쪽 광고로 이동하게 만들기(step4에서 다시설정)
   /* 
-      var next = $('.next_btn');
-      var slideI = 0;
-      next.on('click',function(e) {
+    var next = $('.next_btn');
+    var slideI = 0;
+    next.on('click',function(e) {
       e.preventDefault();
       slideI += 1;
       var _index = slideI * 100;
@@ -36,8 +36,8 @@
 
   // step_03 왼쪽 버튼 클릭하여 이전 광고로 이동하게 만들기(step4에서 다시설정)
   /*
-      var prev = $('.prev_btn');
-      prev.on('click',function(e) {
+    var prev = $('.prev_btn');
+    prev.on('click',function(e) {
       e.preventDefault();
       slideI -= 1;
       var _index = slideI * 100;
@@ -45,16 +45,16 @@
     });
  */
   // step_04 해당광고의 끝으로 이동하면 버튼 사라지게 만들기
-      var next = $('.next_btn');
-      var prev = $('.prev_btn');
-      var slideI = 0;
-      var liLeng = viewIndi.length-1; // length는 갯수를 파악하는 것 0이면 없다는 의미
+    var next = $('.next_btn');
+    var prev = $('.prev_btn');
+    var slideI = 0;
+    var liLeng = viewIndi.length-1; // length는 갯수를 파악하는 것 0이면 없다는 의미
 
     next.on('click', function(e) {
       e.preventDefault();
       slideI += 1;
       if(slideI > liLeng){ slideI = liLeng; }
-      
+      var _index = slideI * 100;
       viewOuter.animate({marginLeft:-_index + '%'});
       viewIndi.removeClass('action');
       viewIndi.eq(slideI).addClass('action');

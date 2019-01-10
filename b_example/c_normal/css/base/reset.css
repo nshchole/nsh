@@ -8,10 +8,10 @@ ul,ol,li{list-style: none;}
 header,nav,aside,article,section,footer,main,figure,figcaption{display: block; margin: 0; padding: 0; border: 0; outline: 0;}
 ul,ol,li{list-style: none;}
 
-a{text-decoration: none; color: #f06;}
+a{text-decoration: none; color: #171717;}
 button{cursor: pointer; border: 0; border-radius: 0; background-color: transparent;}
 
-a:hover, a:focus{color: #fa0;}
+a:hover, a:focus{color: #a30;}
 a:focus, button:focus{outline: 0.2rem solid #fa0; outline-offset: 0.2rem; position: relative; z-index: 500;}
 
 br{width: 0; height: 0; display: block; font-size: 0;}
