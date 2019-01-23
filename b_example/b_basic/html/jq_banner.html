@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- jq_banner.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../css/base/reset.css" />
+<link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/src/jq_banner.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+<style>
+  h1 {padding: 0.3rem; background-color: #0af; margin-bottom: 2rem;}
+  .min_banner {position: relative; margin: auto; width: 300px; height: 300px; border: 3px solid #333;}
+  .btn {position: absolute; top: 110%; left: 0; width: 100%;}
+  .btn>button {width: 100px; height: 50px; background-color: #caa; border: 0; font-size: 1.5rem; cursor: pointer;}
+  .btn>button {float: left;}
+  .btn>button:first-of-type {float: right;}
+
+  .product {width: 300%; height: 100%; border: 10px solid #fa0;}
+  .product>ul {width: calc(100% / 3 * 5); height: 100%;}
+  .product>ul>li {float: left; width: calc(100% / 5); height: 100%;
+      text-align: center; line-height: 300px; font-size: 2rem;}
+  .pr_01 {background-color: #ac1;}
+  .pr_02 {background-color: #fa1;}
+  .pr_03 {background-color: #23a;}
+  .pr_04 {background-color: #bab;}
+  .pr_05 {background-color: #6ba;}
+
+</style>
+
+<title>title name</title>
+</head>
+
+<body>
+
+  <!-- layout -->
+  <h1>banner</h1>
+  <div class="min_banner">
+    <div class="btn">
+      <button type="button">rBtn</button>
+      <button type="button">lBtn</button>
+    </div>
+    <div class="product">
+      <ul>
+        <li class="pr_01">pr_01</li>
+        <li class="pr_02">pr_02</li>
+        <li class="pr_03">pr_03</li>
+        <li class="pr_04">pr_04</li>
+        <li class="pr_05">pr_05</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- script(jQuery) -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script>
+    (function($) {
+      var pr = $('.product').children('ul');
+      var prLi = pr.children('li');
+      prLi.eq(-3).nextAll().prependTo(pr);
+      pr.css({marginLeft: -200 + '%', position: 'relative', left: 0});
+      prLi = pr.children('li');
+
+      var lbtn = $('.btn').children().eq(-1);
+      var rbtn = $('.btn').children().eq(0);
+
+      lbtn.on('click', function(e){
+        e.preventDefault();
+
+        pr.animate({left:100+'%'},function(){
+
+        });
+      });
+
+    })(jQuery);
+
+  </script>
+</body>
+</html>

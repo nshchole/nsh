@@ -15,14 +15,14 @@
 var wrapChild = wrap.children();
 console.log(wrapChild);
 
-var headBox = $(wrapChild[0]);
+var headBox = $(wrapChild[0]);                                                                              
 var viewBox = $(wrapChild[1]);
 var newsBox = $('#newsBox');
 var conBox  = $('#conBox');
 var footBox = $('#footBox');
 // headBox.css({height:'10rem', backgroundColor:'#faa'});
 
-// #headBox ==============================================
+// #headBox ============================================== 
 headBox.html('<h1></h1>\
               <nav id="gnb">\
                 <ul></ul>\
