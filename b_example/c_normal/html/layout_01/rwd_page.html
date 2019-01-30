@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- rwd_page.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+<link rel="stylesheet" href="../../css/base/reset.css" />
+<link rel="stylesheet" href="../../css/base/common.css" />
+<link rel="stylesheet" href="../../css/src/jquery/rwd_page.css" />
+
+<!--[if IE]>
+<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+<script src="../ie/css3pie/PIE_IE9.js"></script>
+<script src="../ie/ie9.min.js"></script>
+<script src="../ie/respond/dest/respond.min.js"></script>
+<script></script>
+<![endif] -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+<link rel="apple-touch-icon" href="../favicon.png">
+
+<style>
+  #wrap {margin-top: 1rem; box-sizing: border-box; width: 100%; height: 100%; background-color: #ccc;}
+  .device {margin:auto; padding: 1rem; box-sizing: border-box; width: 80%; height: 400px; background-color: #fff;
+    border-radius: 0.3rem; box-shadow: 0.2rem 0.2rem 0.2rem #181818; font-size: 1.3rem;}
+
+
+  @media screen and (max-width: 480px) {
+    #wrap{background-color: #0af;}
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    #wrap{background-color: #3aa;}
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1366px) {
+    #wrap{background-color: #ba7;}
+  }
+
+  @media screen and (min-width: 1367px) {
+    #wrap{background-color: #0af;}
+  }
+
+</style>
+<title>title name</title>
+</head>
+
+<body>
+
+  <!-- layout -->
+  <div id="wrap">
+    <div class="device"></div>
+    <strong>화면크기</strong>
+    <p>
+      <span class="size">크기값</span>px<br />
+      <span class="product">제품종류</span>
+    </p>
+  </div>
+
+  <!-- script(jQuery) -->
+  <script src="../../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+  <script src="../../js/src/rwd_page.js"></script>
+</body>
+</html>
